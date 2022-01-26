@@ -29,7 +29,7 @@ devourdevils = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 
-@single.on_message(filters.photo)
+@devourdevils.on_message(filters.photo)
 async def uploadphoto(client, message):
   msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
   userid = str(message.chat.id)
