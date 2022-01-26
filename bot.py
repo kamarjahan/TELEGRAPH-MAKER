@@ -136,4 +136,4 @@ async def button(Tgraph, update):
         await update.message.delete()
         await home(Tgraph, update.message)
 
-singletelegraphdevour.run()
+devourdevils.run()
