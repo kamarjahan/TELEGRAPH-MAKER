@@ -6,7 +6,7 @@
         "Telegra.ph",
         "Uploader",
         "Telegram Bot",
-        "MoTechYT"
+        "DEVOURDEVILS"
     ],
     "website": "https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ",
     "repository": "https://github.com/kamarjahan/TELEGRAPH-MAKER",
@@ -17,11 +17,11 @@
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash from my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
         "APP_ID": {
-            "description": "Your API ID from my.telegram.org or @MT_MyTelegramOrg_Bot",
+            "description": "Your API ID from my.telegram.org",
             "value": ""
         }
     },
