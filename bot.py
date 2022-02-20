@@ -73,6 +73,10 @@ async def home(client, message):
     [
         InlineKeyboardButton('🗣️Any Doubt', url='http://telegram.me/devourdevils'),
         InlineKeyboardButton('Source Code📃', url='https://github.com/kamarjahan/TELEGRAPH-MAKER')
+    ],
+    [
+        InlineKeyboardButton('Dev', url='t.me/devourdevils'),
+        InlineKeyboardButton('support ChAT', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_message(
