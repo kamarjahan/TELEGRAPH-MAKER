@@ -1,5 +1,3 @@
-
-
 import os
 from telegraph import upload_file
 import pyrogram
@@ -117,11 +115,27 @@ async def button(Tgraph, update):
       cb_data = update.data
       if "help" in cb_data:
         await update.message.delete()
-        await help(Tgraph, update.message)
+     
+   await help(Tgraph, update.message)
       elif "close" in cb_data:
         await update.message.delete() 
       elif "home" in cb_data:
         await update.message.delete()
         await home(Tgraph, update.message)
+        
+        
+        
+        
+        
+@devourdevils.on_message(filters.command("id")) 
+async def help_message(bot, message):
+
+    await message.reply_text(
+        text=id_MESSAGE.format(message.from_user.id)
+    )
+        
+        
+        
+        
 
 devourdevils.run()
