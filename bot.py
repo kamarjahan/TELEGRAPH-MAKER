@@ -46,7 +46,11 @@ async def uploadgif(client, message):
       await msg.edit_text("Something really Happend Wrong...") 
   else:
     await message.reply_text("Size Should Be Less Than 5 mb")
-
+    
+    
+    
+    
+    
 @devourdevils.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
@@ -64,8 +68,25 @@ async def uploadvid(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb")
 
+    
+    
+    
+ALL_PIC = [
+ "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
+ "https://telegra.ph/file/b308d89346393bae36e67.jpg",
+ "https://telegra.ph/file/c9e6e4ed8ad3269aca2bd.jpg",
+ "https://telegra.ph/file/e02dad176eeca63fa83bf.jpg",
+ "https://telegra.ph/file/37fd55f07a4670db6c2c6.jpg"
+]
+    
+    
+    
+    
+    
 @devourdevils.on_message(filters.command(["start"]))
 async def home(client, message):
+        reply_photo
+        photo=random.choice(ALL_PIC),
   buttons = [[
         InlineKeyboardButton('🤔Help', callback_data='help'),
         InlineKeyboardButton('Close🔐', callback_data='close')
@@ -79,9 +100,9 @@ async def home(client, message):
         InlineKeyboardButton('support ChAT', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_message(
+  await devourdevils.send_photo(
         chat_id=message.chat.id,
-        text="""<b>👋Hey there,
+        caption="""<b>👋Hey there,
         
 Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
