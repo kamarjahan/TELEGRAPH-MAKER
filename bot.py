@@ -116,7 +116,7 @@ async def button(Tgraph, update):
       if "help" in cb_data:
         await update.message.delete()
      
-   await help(Tgraph, update.message)
+        await help(Tgraph, update.message)
       elif "close" in cb_data:
         await update.message.delete() 
       elif "home" in cb_data:
