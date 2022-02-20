@@ -71,7 +71,7 @@ async def uploadvid(client, message):
     await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
     try:
       tlink = upload_file(vid_path)
-      await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
+      await msg.edit_text(f"https://ddgner.ph{tlink[0]}")     
       os.remove(vid_path)   
     except:
       await msg.edit_text("Something really Happend Wrong...") 
@@ -119,7 +119,7 @@ async def help(client, message):
         
 Just Send Me A Video/gif/photo Upto 5mb.
 
-i'll upload it to telegra.ph and give you the direct link**""",
+i'll upload it to ddgner.ph and give you the direct link**""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
