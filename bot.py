@@ -121,14 +121,6 @@ async def button(Tgraph, update):
         await update.message.delete() 
       elif "home" in cb_data:
         await update.message.delete()
-        await home(Tgraph, update.message)
-        
-        )
-        
-        
-
-        
-        
-        
+        await home(Tgraph, update.message)      
 
 devourdevils.run()
