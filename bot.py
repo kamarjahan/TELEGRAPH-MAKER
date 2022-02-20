@@ -126,14 +126,7 @@ async def button(Tgraph, update):
         
         
         
-        
-@devourdevils.on_message(filters.command("id")) 
-async def help_message(bot, message):
 
-    await message.reply_text(
-        text=id_MESSAGE.format(message.from_user.id)
-    )
-        
         
         
         
