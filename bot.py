@@ -126,7 +126,8 @@ async def help(client, message):
         InlineKeyboardButton('⚕️Our group⚕️', url='http://telegram.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_message(
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         text="""**There Is Nothing To KnowMore,
               
