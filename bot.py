@@ -85,8 +85,6 @@ ALL_PIC = [
     
 @devourdevils.on_message(filters.command(["start"]))
 async def home(client, message):
-        reply_photo
-        photo=random.choice(ALL_PIC),
   buttons = [[
         InlineKeyboardButton('🤔Help', callback_data='help'),
         InlineKeyboardButton('Close🔐', callback_data='close')
@@ -101,6 +99,7 @@ async def home(client, message):
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption="""<b>👋Hey there,
         
