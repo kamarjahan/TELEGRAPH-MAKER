@@ -7,6 +7,7 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
+import random
 
 devourdevils = Client(
    "Telegra.ph Uploader",
