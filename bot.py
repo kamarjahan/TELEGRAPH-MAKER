@@ -62,7 +62,7 @@ async def uploadvid(client, message):
     await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
     try:
       tlink = upload_file(vid_path)
-      await msg.edit_text(f"https://ddgner.ph{tlink[0]}")     
+      await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
       os.remove(vid_path)   
     except:
       await msg.edit_text("Something really Happend Wrong...") 
@@ -102,13 +102,15 @@ async def home(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="""<b>👋Hello {mention},
+        caption="""<b>👋Hello bro,
         
 Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
 Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
+
+
         
-Made With Love By @devourdevils</b>""",
+Made With By @devourdevils</b>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -121,16 +123,17 @@ async def help(client, message):
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms')
+        InlineKeyboardButton('⚕️Our group⚕️', url='http://telegram.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_message(
         chat_id=message.chat.id,
-        text="""**There Is Nothung To KnowMore,
-        
+        text="""**There Is Nothing To KnowMore,
+              
+              
 Just Send Me A Video/gif/photo Upto 5mb.
 
-i'll upload it to ddgner.ph and give you the direct link**""",
+i'll upload it to telegra.ph and give you the direct link**""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
