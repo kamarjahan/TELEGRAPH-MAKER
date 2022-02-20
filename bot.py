@@ -6,7 +6,7 @@ from sample_config import Config
 from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
-    CallbackQuery, InlineQuery)
+    CallbackQuery, InlineQuery, Message)
 
 devourdevils = Client(
    "Telegra.ph Uploader",
