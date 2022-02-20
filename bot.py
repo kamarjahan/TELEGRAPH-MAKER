@@ -102,7 +102,7 @@ async def home(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="""<b>👋Hey there,
+        caption="""<b>👋Hello {mention},
         
 Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
