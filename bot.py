@@ -249,7 +249,8 @@ async def id(client, message):
         
 @devourdevils.on_message(filters.command("dev")) 
 async def dev(client, message):
-    text = f"""this is my developer information
+    await message.reply_text(
+        text=f"""this is my developer information
 FIRST NAME:DEVOUR
 LAST NAME :DEVIL
 USERNAME  :@DEVOURDEVILS
@@ -257,12 +258,9 @@ GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}"""
     disable_web_page_preview=true,
     
-
-    
-    
-    await message.reply_text(text=text)
-    
-    
+        )
+    )
+   
     
     
 @devourdevils.on_message(filters.command("cr")) 
