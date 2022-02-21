@@ -8,6 +8,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
 import logging
+import true
 
 devourdevils = Client(
    "Telegra.ph Uploader",
