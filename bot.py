@@ -244,8 +244,23 @@ async def id(client, message):
     await message.reply_text(text=text)
 
 
+    
+      )
+        
 
-
+        
+@devourdevils.on_message(filters.command("dev")) 
+async def id(client, message):
+    text = f"""this is my developer information
+FIRST NAME:DEVOUR
+LAST NAME :DEVIL
+USERNAME  :@DEVOURDEVILS
+GITHUB PRO:<b>♞ GITHUB:</b> <a href="github.com/kamarjahan">gITHUB </a>
+WHO ASKED DEV INFO :{message.from_user.mention}"""
+    
+    
+    
+    await message.reply_text(text=text)
 
 @devourdevils.on_callback_query()
 async def button(Tgraph, update):
