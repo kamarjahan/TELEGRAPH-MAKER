@@ -261,7 +261,7 @@ WHO ASKED DEV INFO :{message.from_user.mention}"""
         
     
     
-    await message.reply_text(text=text)
+    await message.reply_text(text=text
     
     
     
