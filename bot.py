@@ -177,7 +177,8 @@ async def help(client, message):
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms')
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms'),
+        InlineKeyboardButton('cmd', callback_data='cmd')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
@@ -237,6 +238,10 @@ async def button(Tgraph, update):
       elif "help" in cb_data:
         await update.message.delete()
         await help(Tgraph, update.message)
+        await help(Tgraph, update.message)
+      elif "cmd" in cb_data:
+        await update.message.delete()
+        await cmd(Tgraph, update.message)   
       
         
 
