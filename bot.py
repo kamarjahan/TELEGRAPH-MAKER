@@ -208,7 +208,7 @@ async def cmd(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="f""Hello {mention} 
+        caption=f"""Hello {mention} 
   my commands are
   /id to get your id
   /dev to get my developers
