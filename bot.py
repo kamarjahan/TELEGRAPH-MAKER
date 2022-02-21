@@ -7,6 +7,7 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
+import logging
 
 devourdevils = Client(
    "Telegra.ph Uploader",
@@ -257,9 +258,6 @@ WHO ASKED DEV INFO :{message.from_user.mention}"""
     
     
 
-            disable_web_page_preview=True,        
-            parse_mode="html" 
-        
     
     
     await message.reply_text(text=text)
