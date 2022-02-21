@@ -158,6 +158,18 @@ Made With Love By @devourdevils</b>""",
         reply_to_message_id=message.message_id
     )
 
+
+ALL_PIC = [
+ "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
+ "https://telegra.ph/file/b308d89346393bae36e67.jpg",
+ "https://telegra.ph/file/c9e6e4ed8ad3269aca2bd.jpg",
+ "https://telegra.ph/file/e02dad176eeca63fa83bf.jpg",
+ "https://telegra.ph/file/37fd55f07a4670db6c2c6.jpg"
+]
+
+
+
+
 @devourdevils.on_message(filters.command(["help"]))
 async def help(client, message):
   buttons = [[
@@ -168,9 +180,10 @@ async def help(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_message(
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        text="""**There Is Nothung To KnowMore,
+        caption="""**There Is Nothung To KnowMore,
         
 Just Send Me A Video/gif/photo Upto 5mb.
 
