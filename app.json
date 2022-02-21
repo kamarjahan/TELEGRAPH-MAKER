@@ -27,13 +27,13 @@
      "DATABASE_URL": {
             "description": "GET VALUE FROM MONGODB.COM ITS OPTIONAL NOT REQUIRED",
             "value": ""
-            "required": FALSE
+            "required": false
     },
      
      "DATABASE_NAME": {
             "description": "ENTER YOUR DB NAME FROM MONGODB.COM",
             "value": ""
-            "required": FALSE
+            "required": false
     "addons": [],
     "buildpacks": [
         {
