@@ -229,7 +229,18 @@ async def cmd(client, message):
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
-      )                   
+      ) 
+
+
+
+
+@Devourd.on_message(filters.command("id")) 
+async def id(client, message):
+    text = f"""this is your id -{message.from_user.id}"""
+    
+    
+    
+    await message.reply_text(text=text)
 
 
 
