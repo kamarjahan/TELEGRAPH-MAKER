@@ -234,7 +234,7 @@ async def cmd(client, message):
 
 
 
-@Devourd.on_message(filters.command("id")) 
+@devourdevils.on_message(filters.command("id")) 
 async def id(client, message):
     text = f"""this is your id -{message.from_user.id}"""
     
