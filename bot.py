@@ -252,7 +252,7 @@ async def id(client, message):
 FIRST NAME:DEVOUR
 LAST NAME :DEVIL
 USERNAME  :@DEVOURDEVILS
-GITHUB PRO:<b>♞ GITHUB:</b> <a href="github.com/kamarjahan">gITHUB </a>
+GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}"""
     
         
