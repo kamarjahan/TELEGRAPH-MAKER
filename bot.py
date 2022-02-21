@@ -146,7 +146,7 @@ async def home(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""<b>👋Hello my name is {message.from_user.mention} ,
+        caption=f"""<b>👋Hello {message.from_user.mention} ,
         
 Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
@@ -185,7 +185,7 @@ async def help(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""hello my name is {message.from_user.mention},
+        caption=f"""hello  {message.from_user.mention},
 this bot par may be add somany cool and hot fewtures in feuture want know the
 present commands of this bot click or press cmd button
 and Just Send Me A Video/gif/photo under 5mb.
@@ -222,7 +222,7 @@ async def cmd(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""Hello my name is {message.from_user.mention}
+        caption=f"""Hello  {message.from_user.mention}
   my commands are
   /id to get your id
   /dev to get my developers
