@@ -154,7 +154,7 @@ Am a telegraph Uploader That Can Upload Photo, Video And Gif
 Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
 want know more about this bot click help button
         
-Made With Love By </b> <a href=T.ME/DEVOURDEVILS">DEVOURDEVIL </a>""",
+Made With Love By </b> <a href="t.me/devourdevils">DEVOURDEVIL </a>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
