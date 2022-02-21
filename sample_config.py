@@ -8,8 +8,8 @@ class Config(object):
 
     API_HASH = os.environ.get("API_HASH", "")
     
-    DATABASE_URL = os.environ.get("DB_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
     
-    DATABASE_NAME = os.environ.get("DB_NAME", "")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "")
     
     
