@@ -242,9 +242,6 @@ async def id(client, message):
     
     
     await message.reply_text(text=text)
-
-
-    
       )    
         
 
@@ -262,9 +259,6 @@ WHO ASKED DEV INFO :{message.from_user.mention}"""
     
     
     await message.reply_text(text=text)
-    
-    
-    
       )    
 
 
