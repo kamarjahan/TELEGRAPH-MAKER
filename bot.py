@@ -256,13 +256,17 @@ GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}"""
     
     
-            disable_web_page_preview=True,        
-            parse_mode="html")
+
     
         
     
     
     await message.reply_text(text=text)
+    
+    
+    
+            disable_web_page_preview=True,        
+            parse_mode="html")
           
 
 
