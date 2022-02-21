@@ -248,7 +248,7 @@ async def id(client, message):
 
         
 @devourdevils.on_message(filters.command("dev")) 
-async def id(client, message):
+async def dev(client, message):
     text = f"""this is my developer information
 FIRST NAME:DEVOUR
 LAST NAME :DEVIL
@@ -261,6 +261,21 @@ WHO ASKED DEV INFO :{message.from_user.mention}"""
     
     
     await message.reply_text(text=text)
+    
+    
+    
+    
+@devourdevils.on_message(filters.command("cr")) 
+async def cr(client, message):
+    text = f"""hello {message.from_user.mention}  fool of the this command maded for folling you my boy
+    this cmd find by </b> <a href="T.ME/devourdevils">DEVOURDEVILS </a>"""
+    
+    
+
+    
+    
+    await message.reply_text(text=text)
+    
 
 @devourdevils.on_callback_query()
 async def button(Tgraph, update):
