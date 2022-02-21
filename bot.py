@@ -146,11 +146,12 @@ async def home(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="""<b>👋Hey there,
+        caption=f"""<b>👋Hello {message.from_user.mention} ,
         
 Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
 Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
+want know more about this bot click help button
         
 Made With Love By @devourdevils</b>""",
         reply_markup=reply_markup,
@@ -177,17 +178,17 @@ async def help(client, message):
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms'),
+        InlineKeyboardButton('⚕️Our group⚕️', url='http://telegram.me/septemberfilms'),
         InlineKeyboardButton('cmd', callback_data='cmd')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="""**There Is Nothung To KnowMore,
-        
-Just Send Me A Video/gif/photo Upto 5mb.
-
+        caption=f"""hello {message.from_user.mention},
+this bot par may be add somany cool and hot fewtures in feuture want know the
+present commands of this bot click or press cmd button
+and Just Send Me A Video/gif/photo under 5mb.
 i'll upload it to telegra.ph and give you the direct link**""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -221,7 +222,7 @@ async def cmd(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption="""Hello  
+        caption=f"""Hello {message.from_user.mention}
   my commands are
   /id to get your id
   /dev to get my developers
