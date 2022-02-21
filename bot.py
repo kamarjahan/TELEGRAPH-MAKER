@@ -191,7 +191,37 @@ i'll upload it to telegra.ph and give you the direct link**""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
-    )                           
+    )
+
+
+@devourdevils.on_message(filters.command(["cmd"]))
+async def cmd(client, message):
+  buttons = [[
+        InlineKeyboardButton('🏡Home', callback_data='home'),
+        InlineKeyboardButton('Close🔐', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms'),
+        InlineKeyboardButton('🤔Help', callback_data='help')
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption="f""Hello {mention} 
+  my commands are
+  /id to get your id
+  /dev to get my developers
+  /cr  to my crt""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )                   
+
+
+
+
+
 @devourdevils.on_callback_query()
 async def button(Tgraph, update):
       cb_data = update.data
@@ -203,7 +233,11 @@ async def button(Tgraph, update):
         await update.message.delete() 
       elif "home" in cb_data:
         await update.message.delete()
-        await home(Tgraph, update.message)   
+        await home(Tgraph, update.message)
+      elif "help" in cb_data:
+        await update.message.delete()
+        await help(Tgraph, update.message)
+      
         
 
 devourdevils.run()
