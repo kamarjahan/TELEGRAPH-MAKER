@@ -15,33 +15,36 @@
         "TG_BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
+            "required": true
         },
         "API_HASH": {
             "description": "Your API Hash from my.telegram.org",
             "value": ""
+            "required": true
         },
         "APP_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
+            "required": true
         },
      "DATABASE_URL": {
             "description": "GET VALUE FROM MONGODB.COM ITS OPTIONAL NOT REQUIRED",
             "value": ""
             "required": false
-       },
+        },
      
      "DATABASE_NAME": {
             "description": "ENTER YOUR DB NAME FROM MONGODB.COM",
             "value": ""
             "required": false
-      }
-     
+        }
+    },
     "addons": [],
     "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ],
+     ],
     "formation": {
         "worker": {
             "quantity": 1,
