@@ -154,7 +154,7 @@ Am a telegraph Uploader That Can Upload Photo, Video And Gif
 Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
 want know more about this bot click help button
         
-Made With Love By @devourdevils</b>""",
+Made With Love By </b> <a href=T.ME/DEVOURDEVILS">DEVOURDEVIL </a>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -179,7 +179,7 @@ async def help(client, message):
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our group⚕️', url='http://telegram.me/septemberfilms'),
+        InlineKeyboardButton('⚕️Our group⚕️', url='t.me/septemberfilms'),
         InlineKeyboardButton('cmd', callback_data='cmd')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -216,7 +216,7 @@ async def cmd(client, message):
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='http://telegram.me/septemberfilms'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
         InlineKeyboardButton('🤔Help', callback_data='help')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -251,8 +251,8 @@ async def id(client, message):
 async def dev(client, message):
     await message.reply_text(
         text=f"""this is my developer information
-FIRST NAME:DEVOUR
-LAST NAME :DEVIL
+FIRST NAME:`DEVOUR`
+LAST NAME :`DEVIL`
 USERNAME  :@DEVOURDEVILS
 GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}"""
