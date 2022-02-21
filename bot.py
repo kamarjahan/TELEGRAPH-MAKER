@@ -238,7 +238,7 @@ async def cmd(client, message):
 
 @devourdevils.on_message(filters.command("id")) 
 async def id(client, message):
-    text = f"""this is your id -{message.from_user.id}"""
+    text = f"""this is your id </m>-{message.from_user.id}"""
     
     
     
@@ -267,7 +267,7 @@ WHO ASKED DEV INFO :{message.from_user.mention}"""
     
 @devourdevils.on_message(filters.command("cr")) 
 async def cr(client, message):
-    text = f"""hello {message.from_user.mention}  fool of the this command maded for folling you my boy
+    text = f"""hello {message.from_user.mention}  fool of the the day command maded for folling you my boy
     this cmd find by </b> <a href="T.ME/devourdevils">DEVOURDEVILS </a>"""
     
     
