@@ -144,6 +144,11 @@ ALL_PIC = [
 @devourdevils.on_message(filters.command(["start"]))
 async def home(client, message):
   buttons = [[
+
+        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
+    ],
+    [
+
         InlineKeyboardButton('🤔Help', callback_data='help'),
         InlineKeyboardButton('Close🔐', callback_data='close')
     ],
