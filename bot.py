@@ -14,6 +14,8 @@ devourdevils = Client(
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
    bot_token=Config.TG_BOT_TOKEN,
+   database_url=Config.DATABASE_URL,
+   database_name=Config.DATABASE_NAME,
 )
 
 @devourdevils.on_message(filters.photo)
