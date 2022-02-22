@@ -23,6 +23,16 @@
         "APP_ID": {
             "description": "Your API ID from my.telegram.org or @MT_MyTelegramOrg_Bot",
             "value": ""
+        },
+        "DATABASE_URL": {
+            "description": "yours get from mongodb.com",
+            "value": ""
+            "required": false
+        },
+        "DATABASE_NAME": {
+            "description": "Your mongodb dbs name",
+            "value": ""
+            "required": false
         }
     },
     "addons": [],
