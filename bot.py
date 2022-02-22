@@ -303,17 +303,6 @@ WHO ASKED DEV INFO :{message.from_user.mention}""", disable_web_page_preview=Tru
    
     
     
-@devourdevils.on_message(filters.command("cr")) 
-async def cr(client, message):
-    text=f"""hello {message.from_user.mention}  fool of the the day command maded for folling you my boy
-    this cmd find by </b> <a href="T.ME/devourdevils">DEVOURDEVILS </a>""", disable_web_page_preview=True,
-    
-    
-
-    
-    
-    await message.reply_text(text=text)
-    
 
 @devourdevils.on_callback_query()
 async def button(Tgraph, update):
