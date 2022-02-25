@@ -27,6 +27,19 @@ Bot used for photo to link
 </p>
 </details>
 
+
+
+
+<details><summary>Deploy To tg bot</summary>
+<p>
+<br>
+<a href="https://telegram.dog/XTZ_HerokuBot?start=a2FtYXJqYWhhbi9URUxFR1JBUEgtTUFLRVIgbWFpbg">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
+
 A Telegram Bot Written In Python. Which helps To Upload Media's like gif video and image under 5MB To telegra.ph   
 
 <details><summary>Local Machine</summary>
