@@ -110,9 +110,9 @@ async def uploadvid(client, message):
       await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
       os.remove(vid_path)   
     except:
-      await msg.edit_text("Something really Happend Wrong... join @septemberfilms"") 
+      await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
   else:
-    await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms"")
+    await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
 
     
     
