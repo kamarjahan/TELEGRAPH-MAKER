@@ -1,4 +1,4 @@
- {
+{
     "name": "DEVOUR TELEGRAPH BOT",
     "description": "A bot that can upload medias to Telegra.ph",
     "logo": "https://telegra.ph/file/b40f09076164c44df042d.jpg",
@@ -23,15 +23,7 @@
         "APP_ID": {
             "description": "Your API ID from my.telegram.org or @MT_MyTelegramOrg_Bot",
             "value": ""
-       },
-       "TG_BOT_USERNAME": {
-            "description": "YOUR BOT USERNAME TYPE CORRECTLY IN YOUR USERNAME",
-            "value": "'t.me/YOUR USERNAME,?startgroup=true'"
-       },
-       "START_MESSAGE": {
-            "description": "your bot start message"
-            "value": "helo iam telegraph uploader bot"
-       } 
+       }
     },
     "addons": [],
     "buildpacks": [
