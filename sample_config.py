@@ -8,7 +8,12 @@ class Config(object):
 
     API_HASH = os.environ.get("API_HASH", "")
     
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    TG_BOT_USERNAME = os.environ.get("TG_BOT_USERNAME", "")
+    
+    START_MESSAGE = os.environ.get("START_MESSAGE", "")
+    
 
-    DATABASE_NAME = os.environ.get("DATABASE_NAME", "")
+    
+    
+    
       
