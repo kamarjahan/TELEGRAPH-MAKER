@@ -28,7 +28,7 @@ async def uploadphoto(client, message):
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms for reply") 
   else:
-    await msg.edit_text(f"`https://devour.ph{tlink[0]}`")     
+    await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
 
 @devourdevils.on_message(filters.animation)
@@ -41,7 +41,7 @@ async def uploadgif(client, message):
     await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....join` @septemberfilms")
     try:
       tlink = upload_file(gif_path)
-      await msg.edit_text(f"`https://devour.ph{tlink[0]}`")   
+      await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")   
       os.remove(gif_path)   
     except:import os
 from telegraph import upload_file
@@ -73,7 +73,7 @@ async def uploadphoto(client, message):
   except:
     await msg.edit_text("`Something went wrong join` @septemberfilms") 
   else:
-    await msg.edit_text(f"`https://devour.ph{tlink[0]}`")     
+    await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
 
 @devourdevils.on_message(filters.animation)
@@ -86,7 +86,7 @@ async def uploadgif(client, message):
     await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
     try:
       tlink = upload_file(gif_path)
-      await msg.edit_text(f"`https://devour.ph{tlink[0]}`")   
+      await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")   
       os.remove(gif_path)   
     except:
       await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
@@ -107,7 +107,7 @@ async def uploadvid(client, message):
     await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
     try:
       tlink = upload_file(vid_path)
-      await msg.edit_text(f"`https://devour.ph{tlink[0]}`")     
+      await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
       os.remove(vid_path)   
     except:
       await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
