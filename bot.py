@@ -145,7 +145,7 @@ ALL_PIC = [
 async def home(client, message):
   buttons = [[
 
-        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
+        InlineKeyboardButton('ADD ME TO GROUP', url=Config.TG_BOT_USERNAME,)
     ],
     [
 
@@ -164,14 +164,7 @@ async def home(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""<b>`👋Hello` {message.from_user.mention} ,
-        
-`Am a telegraph Uploader That Can Upload Photo, Video And Gif
-        
-Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
-want know more about this bot click help button
-        
-Made With Love By </b>` <a href="t.me/devourdevils">DEVOURDEVIL </a>""",
+        caption=Config.START_MESSAGE,
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
