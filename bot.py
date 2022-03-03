@@ -8,7 +8,6 @@ from pyrogram.types import (
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
 import logging
-from youtube_search import YoutubeSearch
 
 
 
