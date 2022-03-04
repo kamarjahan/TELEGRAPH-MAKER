@@ -282,4 +282,5 @@ WHO ASKED DEV INFO :{message.from_user.mention}""", disable_web_page_preview=Tru
     )
 
 
-
+   
+devourdevils.run()
