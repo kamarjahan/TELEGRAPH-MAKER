@@ -361,7 +361,7 @@ FIRST NAME:`DEVOUR`
 LAST NAME :`DEVIL`
 USERNAME  :@DEVOURDEVILS
 GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
-WHO ASKED DEV INFO :{message.from_user.mention}""", disable_web_page_preview=True,
+WHO ASKED DEV INFO :{message.from_user.mention}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
