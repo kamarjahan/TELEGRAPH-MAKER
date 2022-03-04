@@ -393,7 +393,7 @@ async def button(Tgraph, update):
         await update.message.delete()
       elif "id" in cb_data:
         await update.message.edit(
-            text=f""" `-{message.from_user.id}`
+            text=f""" `-{message.from_user.id}`"""
         )
 
 
