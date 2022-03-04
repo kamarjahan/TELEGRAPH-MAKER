@@ -331,8 +331,6 @@ async def dev(client, message):
     [
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
         InlineKeyboardButton('🤔Help', callback_data='help')
-        InlineKeyboardButton('dev info', callback_data='dev')
-        
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
