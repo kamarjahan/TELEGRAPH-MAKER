@@ -345,12 +345,12 @@ ALL_PIC = [
 @devourdevils.on_message(filters.command(["dev"]))
 async def dev(client, message):
   buttons = [[
-        InlineKeyboardButton('🏡Home', callback_data='home'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
-        InlineKeyboardButton('🤔Help', callback_data='help')
+        InlineKeyboardButton('🤔Help', callback_data='help'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
@@ -366,6 +366,7 @@ WHO ASKED DEV INFO :{message.from_user.mention}""", disable_web_page_preview=Tru
         parse_mode="html",
         reply_to_message_id=message.message_id
       )
+
 
 
    
