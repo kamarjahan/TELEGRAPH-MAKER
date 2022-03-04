@@ -316,6 +316,7 @@ async def button(Tgraph, update):
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
         await cmd(Tgraph, update.message)
+        await update.message.edit()
       
 
 devourdevils.run()
