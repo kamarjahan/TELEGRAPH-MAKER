@@ -254,7 +254,7 @@ async def cmd(client, message):
     [
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
         InlineKeyboardButton('🤔Help', callback_data='help')
-        InlineKeyboardButton('🤔Hel', callback_data='alert_1')
+        InlineKeyboardButton('🤔Hel', callback_data='fa')
         
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -317,9 +317,17 @@ async def button(Tgraph, update):
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
         await update.message.delete()
-        await cmd(Tgraph, update.message) 
-      elif query.data == "alert_1":
+        await cmd(Tgraph, update.message)
+
+
+
+
+@devourdevils.on_callback_query()
+async def callback_data(bot, query):
+    if query.data == "fa":
         await query.answer("hi")
+    
+
         
       
 
