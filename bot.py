@@ -316,7 +316,11 @@ async def button(Tgraph, update):
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
         await cmd(Tgraph, update.message)
-        await update.message.edit()
+        await update.message.edit(FIRST NAME:`DEVOUR`
+LAST NAME :`DEVIL`
+USERNAME  :@DEVOURDEVILS
+GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
+WHO ASKED DEV INFO :{message.from_user.mention})
       
 
 devourdevils.run()
