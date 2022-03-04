@@ -254,7 +254,9 @@ async def cmd(client, message):
         InlineKeyboardButton('dev', callback_data='dev')
     ],
     [
-        InlineKeyboardButton('Help', callback_data='help')
+        InlineKeyboardButton('Help', callback_data='help'),
+        InlineKeyboardButton('mention', callback_data='mention'),
+        InlineKeyboardButton('telegraph', callback_data='tgraph')
         
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -366,6 +368,54 @@ WHO ASKED DEV INFO :{message.from_user.mention}""",
         parse_mode="html",
         reply_to_message_id=message.message_id
       )
+
+
+
+
+@devourdevils.on_message(filters.command(["telegraph"]))
+async def tggraph(client, message):
+  buttons = [[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('🤔Help', callback_data='help'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f""SENT A PHOTO AND I WILL UPLOAD IT TO TELEGRAPH AND GIVE THE TELEGRAPH PERMENENT LINK""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )
+
+
+
+
+
+@devourdevils.on_message(filters.command(["mention"]))
+async def mention(client, message):
+  buttons = [[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('🤔Help', callback_data='help'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f"""THIS IS YOUR PERMENENT LINK {message.from_user.mention}""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )
+
 
 
 
