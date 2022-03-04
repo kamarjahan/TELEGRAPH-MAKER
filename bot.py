@@ -249,7 +249,9 @@ ALL_PIC = [
 async def cmd(client, message):
   buttons = [[
         InlineKeyboardButton('🏡Home', callback_data='home'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
+        InlineKeyboardButton('Close🔐', callback_data='close'),
+        InlineKeyboardButton('id', callback_data='id'),
+        InlineKeyboardButton('dev', callback_data='dev')
     ],
     [
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
