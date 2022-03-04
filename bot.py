@@ -254,6 +254,9 @@ async def cmd(client, message):
     [
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
         InlineKeyboardButton('🤔Help', callback_data='help')
+    ],
+    ]   
+        InlineKeyboardButton("alert", callback_data="alert_1")
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
@@ -315,7 +318,10 @@ async def button(Tgraph, update):
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
         await update.message.delete()
-        await cmd(Tgraph, update.message)   
+        await cmd(Tgraph, update.message) 
+      elif query.data == "alert_1":
+        await query.answer("hi")
+        
       
 
 devourdevils.run()
