@@ -272,29 +272,84 @@ async def cmd(client, message):
 
 
 
-@devourdevils.on_message(filters.command("id")) 
+ALL_PIC = [
+ "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
+ "https://telegra.ph/file/b308d89346393bae36e67.jpg",
+ "https://telegra.ph/file/c9e6e4ed8ad3269aca2bd.jpg",
+ "https://telegra.ph/file/e02dad176eeca63fa83bf.jpg",
+ "https://telegra.ph/file/37fd55f07a4670db6c2c6.jpg",
+ "https://telegra.ph/file/3b150ca1e1fa3998f4479.jpg",
+ "https://telegra.ph/file/5418df1528c0c466c8cda.jpg",
+ "https://telegra.ph/file/9682513b3a019f58e4f4d.jpg",
+ "https://telegra.ph/file/eebd8bf520218f0fe53e8.jpg",
+ "https://telegra.ph/file/1721beb890958fea346ba.jpg",
+ "https://telegra.ph/file/a36eb74ffd8357b1e4cd8.jpg",
+ "https://telegra.ph/file/7fd76e2190cfde57e4739.jpg",
+ "https://telegra.ph/file/9f0334896310bb22bdcb1.jpg",
+ "https://telegra.ph/file/3b274bc5398df81dcd820.jpg",
+ "://telegra.ph/file/66af3aff75335ebdfe049.jpg",
+ "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
+ "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
+]
+
+
+
+
+
+@devourdevils.on_message(filters.command(["id"]))
 async def id(client, message):
-    text = f"""this is your id `-{message.from_user.id}`"""
-    
-    
-    
-    await message.reply_text(text=text)
-          
+  buttons = [[
+        InlineKeyboardButton('🏡Home', callback_data='home'),
+        InlineKeyboardButton('Close🔐', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
+        InlineKeyboardButton('🤔Help', callback_data='help')
         
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f"""THIS IS YOUR ID `-{message.from_user.id}`""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )
+
+
 
         
-@devourdevils.on_message(filters.command("dev")) 
+
+
+@devourdevils.on_message(filters.command(["dev"]))
 async def dev(client, message):
-    await message.reply_text(
-        text=f"""this is my developer information
+  buttons = [[
+        InlineKeyboardButton('🏡Home', callback_data='home'),
+        InlineKeyboardButton('Close🔐', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
+        InlineKeyboardButton('🤔Help', callback_data='help')
+        InlineKeyboardButton('dev info', callback_data='dev')
+        
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f"""this is my developer information
 FIRST NAME:`DEVOUR`
 LAST NAME :`DEVIL`
 USERNAME  :@DEVOURDEVILS
 GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}""", disable_web_page_preview=True,
-        
-         
-    )
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )
+
+
    
   
 
@@ -303,7 +358,6 @@ async def button(Tgraph, update):
       cb_data = update.data
       if "help" in cb_data:
         await update.message.delete()
-     
         await help(Tgraph, update.message)
       elif "close" in cb_data:
         await update.message.delete() 
@@ -313,9 +367,14 @@ async def button(Tgraph, update):
       elif "help" in cb_data:
         await update.message.delete()
         await help(Tgraph, update.message)
-        await help(Tgraph, update.message)
       elif "cmd" in cb_data:
         await cmd(Tgraph, update.message)
-        await update.message.edit.cmd()      
+        await update.message.delete()
+      elif "dev" in cb_data:
+        await dev(Tgraph, update.message)
+        await update.message.delete()
+
+
+
 
 devourdevils.run()
