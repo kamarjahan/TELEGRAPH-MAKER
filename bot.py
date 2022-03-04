@@ -386,8 +386,8 @@ async def button(Tgraph, update):
         await update.message.delete()
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
-        await cmd(Tgraph, update.message)
         await update.message.delete()
+        await cmd(Tgraph, update.message)
       elif "dev" in cb_data:
         await dev(Tgraph, update.message)
         await update.message.delete()
