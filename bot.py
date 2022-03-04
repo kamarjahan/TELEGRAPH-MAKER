@@ -316,19 +316,10 @@ async def button(Tgraph, update):
         await help(Tgraph, update.message)
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
-        await update.message.delete()
         await cmd(Tgraph, update.message)
-
-
-
-
-@devourdevils.on_callback_query()
-async def callback_data(bot, query):
-    if query.data == "fa":
-        await query.answer("hi")
-    
-
-        
+      elif update.data == "fa":
+        await update.answer("hi")
       
+       
 
 devourdevils.run()
