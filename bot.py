@@ -248,14 +248,13 @@ ALL_PIC = [
 @devourdevils.on_message(filters.command(["cmd"]))
 async def cmd(client, message):
   buttons = [[
-        InlineKeyboardButton('🏡Home', callback_data='home'),
-        InlineKeyboardButton('Close🔐', callback_data='close'),
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close'),
         InlineKeyboardButton('id', callback_data='id'),
         InlineKeyboardButton('dev', callback_data='dev')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
-        InlineKeyboardButton('🤔Help', callback_data='help')
+        InlineKeyboardButton('Help', callback_data='help')
         
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -301,13 +300,12 @@ ALL_PIC = [
 @devourdevils.on_message(filters.command(["id"]))
 async def id(client, message):
   buttons = [[
-        InlineKeyboardButton('🏡Home', callback_data='home'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms'),
-        InlineKeyboardButton('🤔Help', callback_data='help')
-        
+        InlineKeyboardButton('🤔Help', callback_data='help'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
@@ -394,9 +392,8 @@ async def button(Tgraph, update):
         await dev(Tgraph, update.message)
         await update.message.delete()
       elif "id" in cb_data:
-        await update.message.edit(
-            text=f""" `-{message.from_user.id}`"""
-        )
+        await id(Tgraph, update.message)
+        await update.message.delete()
 
 
 
