@@ -490,7 +490,7 @@ async def username(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""THIS IS YOUR CURRENT USERNAME {message.from_user.username}""",
+        caption=f"""THIS IS YOUR CURRENT USERNAME @{message.from_user.username}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -533,7 +533,7 @@ async def name(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.firstname} {message.from_user.lastname}""",
+        caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.first_name} {message.from_user.last_name}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
