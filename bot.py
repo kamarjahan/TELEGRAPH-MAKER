@@ -239,16 +239,18 @@ async def cmd(client, message):
         InlineKeyboardButton('Close', callback_data='close'),
         InlineKeyboardButton('id', callback_data='id'),
         InlineKeyboardButton('dev', callback_data='dev'),
-        InlineKeyboardButton('name', callback_data='name'),
-        InlineKeyboardButton('botinfo', callback_data='botinfo')
+        InlineKeyboardButton('name', callback_data='name')
     ],
     [
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('mention', callback_data='mention'),
         InlineKeyboardButton('telegraph', callback_data='tgraph'),
         InlineKeyboardButton('username', callback_data='username'),
-        InlineKeyboardButton('about', callback_data='about'),
-        InlineKeyboardButton('tap alert', callback_data='alert')
+        InlineKeyboardButton('about', callback_data='about')
+    ],
+    [
+        InlineKeyboardButton('tap alert', callback_data='alert'),
+        InlineKeyboardButton('botinfo', callback_data='botinfo')    
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
