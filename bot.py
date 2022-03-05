@@ -251,12 +251,14 @@ async def cmd(client, message):
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Close', callback_data='close'),
         InlineKeyboardButton('id', callback_data='id'),
-        InlineKeyboardButton('dev', callback_data='dev')
+        InlineKeyboardButton('dev', callback_data='dev'),
+        InlineKeyboardButton('name', callback_data='name')
     ],
     [
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('mention', callback_data='mention'),
-        InlineKeyboardButton('telegraph', callback_data='tgraph')
+        InlineKeyboardButton('telegraph', callback_data='tgraph'),
+        InlineKeyboardButton('username', callback_data='username')
         
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -266,8 +268,7 @@ async def cmd(client, message):
         caption=f"""Hello  {message.from_user.mention}
   my commands are
   /id to get your id
-  /dev to get my developers
-  /cr  to my crt""",
+  /dev to get my developers""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -455,10 +456,88 @@ async def mention(client, message):
         reply_to_message_id=message.message_id
       )
 
+ALL_PIC = [
+ "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
+ "https://telegra.ph/file/b308d89346393bae36e67.jpg",
+ "https://telegra.ph/file/c9e6e4ed8ad3269aca2bd.jpg",
+ "https://telegra.ph/file/e02dad176eeca63fa83bf.jpg",
+ "https://telegra.ph/file/37fd55f07a4670db6c2c6.jpg",
+ "https://telegra.ph/file/3b150ca1e1fa3998f4479.jpg",
+ "https://telegra.ph/file/5418df1528c0c466c8cda.jpg",
+ "https://telegra.ph/file/9682513b3a019f58e4f4d.jpg",
+ "https://telegra.ph/file/eebd8bf520218f0fe53e8.jpg",
+ "https://telegra.ph/file/1721beb890958fea346ba.jpg",
+ "https://telegra.ph/file/a36eb74ffd8357b1e4cd8.jpg",
+ "https://telegra.ph/file/7fd76e2190cfde57e4739.jpg",
+ "https://telegra.ph/file/9f0334896310bb22bdcb1.jpg",
+ "https://telegra.ph/file/3b274bc5398df81dcd820.jpg",
+ "://telegra.ph/file/66af3aff75335ebdfe049.jpg",
+ "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
+ "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
+]
+
+@devourdevils.on_message(filters.command(["username"]))
+async def username(client, message):
+  buttons = [[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('back⏪', callback_data='cmd'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f"""THIS IS YOUR CURRENT USERNAME {message.from_user.username}""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )
 
 
 
-   
+ALL_PIC = [
+ "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
+ "https://telegra.ph/file/b308d89346393bae36e67.jpg",
+ "https://telegra.ph/file/c9e6e4ed8ad3269aca2bd.jpg",
+ "https://telegra.ph/file/e02dad176eeca63fa83bf.jpg",
+ "https://telegra.ph/file/37fd55f07a4670db6c2c6.jpg",
+ "https://telegra.ph/file/3b150ca1e1fa3998f4479.jpg",
+ "https://telegra.ph/file/5418df1528c0c466c8cda.jpg",
+ "https://telegra.ph/file/9682513b3a019f58e4f4d.jpg",
+ "https://telegra.ph/file/eebd8bf520218f0fe53e8.jpg",
+ "https://telegra.ph/file/1721beb890958fea346ba.jpg",
+ "https://telegra.ph/file/a36eb74ffd8357b1e4cd8.jpg",
+ "https://telegra.ph/file/7fd76e2190cfde57e4739.jpg",
+ "https://telegra.ph/file/9f0334896310bb22bdcb1.jpg",
+ "https://telegra.ph/file/3b274bc5398df81dcd820.jpg",
+ "://telegra.ph/file/66af3aff75335ebdfe049.jpg",
+ "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
+ "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
+]
+
+
+@devourdevils.on_message(filters.command(["name"]))
+async def name(client, message):
+  buttons = [[
+        InlineKeyboardButton('Home', callback_data='home'),
+        InlineKeyboardButton('Close', callback_data='close')
+    ],
+    [
+        InlineKeyboardButton('back⏪', callback_data='cmd'),
+        InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
+    ]]
+  reply_markup = InlineKeyboardMarkup(buttons)
+  await devourdevils.send_photo(
+        photo=random.choice(ALL_PIC),
+        chat_id=message.chat.id,
+        caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.firstname} {message.from_user.lastname}""",
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=message.message_id
+      )   
   
 
 @devourdevils.on_callback_query()
@@ -490,6 +569,12 @@ async def button(Tgraph, update):
       elif "tgraph" in cb_data:
         await update.message.delete()
         await telegraph(Tgraph, update.message)
+      elif "name" in cb_data:
+        await update.message.delete()
+        await name(Tgraph, update.message)
+      elif "username" in cb_data:
+        await update.message.delete()
+        await username(Tgraph, update.message)
 
 
 
