@@ -642,6 +642,7 @@ async def button(Tgraph, update):
       elif "about" in cb_data:
         await update.message.delete()
         await about(Tgraph, update.message)
+        await update.answer("telegraph bot")
       elif update.data == "alert":
         await update.answer("telegraph bot")
 
