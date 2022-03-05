@@ -247,7 +247,8 @@ async def cmd(client, message):
         InlineKeyboardButton('mention', callback_data='mention'),
         InlineKeyboardButton('telegraph', callback_data='tgraph'),
         InlineKeyboardButton('username', callback_data='username'),
-        InlineKeyboardButton('about', callback_data='about')
+        InlineKeyboardButton('about', callback_data='about'),
+        InlineKeyboardButton('tap alert', callback_data='alert')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await devourdevils.send_photo(
@@ -639,5 +640,8 @@ async def button(Tgraph, update):
       elif "about" in cb_data:
         await update.message.delete()
         await about(Tgraph, update.message)
+      elif update.data == "alert":
+        await update.answer("telegraph bot")
+
 
 devourdevils.run()
