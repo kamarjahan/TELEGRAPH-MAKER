@@ -92,11 +92,7 @@ async def uploadgif(client, message):
       await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
-    
-    
-    
-    
-    
+
 @devourdevils.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
@@ -113,9 +109,7 @@ async def uploadvid(client, message):
       await msg.edit_text("Something really Happend Wrong... join @septemberfilms") 
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
-    
-
-    
+ 
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
  "https://telegra.ph/file/b308d89346393bae36e67.jpg",
@@ -135,7 +129,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-    
 
     
 @devourdevils.on_message(filters.command(["start"]))
@@ -189,8 +182,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-
-
 
 
 @devourdevils.on_message(filters.command(["help"]))
@@ -271,8 +262,6 @@ async def cmd(client, message):
         reply_to_message_id=message.message_id
       ) 
 
-
-
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
  "https://telegra.ph/file/b308d89346393bae36e67.jpg",
@@ -292,9 +281,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-
-
-
 
 
 @devourdevils.on_message(filters.command(["id"]))
@@ -317,8 +303,6 @@ async def id(client, message):
         reply_to_message_id=message.message_id
       )
 
-
-
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
  "https://telegra.ph/file/b308d89346393bae36e67.jpg",
@@ -338,8 +322,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-
-        
 
 
 @devourdevils.on_message(filters.command(["dev"]))
@@ -366,8 +348,6 @@ WHO ASKED DEV INFO :{message.from_user.mention}""",
         parse_mode="html",
         reply_to_message_id=message.message_id
       )
-
-
 
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
@@ -410,8 +390,6 @@ async def telegraph(client, message):
         reply_to_message_id=message.message_id
     )
 
-
-
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
  "https://telegra.ph/file/b308d89346393bae36e67.jpg",
@@ -431,7 +409,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-
 
 @devourdevils.on_message(filters.command(["mention"]))
 async def mention(client, message):
@@ -493,8 +470,6 @@ async def username(client, message):
         reply_to_message_id=message.message_id
       )
 
-
-
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
  "https://telegra.ph/file/b308d89346393bae36e67.jpg",
@@ -536,7 +511,6 @@ async def name(client, message):
         reply_to_message_id=message.message_id
       )   
   
-  
 
 ALL_PIC = [
  "https://telegra.ph/file/5150076a5e8d3ea3de995.jpg",
@@ -557,7 +531,6 @@ ALL_PIC = [
  "https://telegra.ph/file/02763d802fcaa64aa2d27.jpg",
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
-
 
 @devourdevils.on_message(filters.command(["botinfo"]))
 async def botinfo(client, message):
@@ -612,7 +585,7 @@ async def about(client, message):
   await devourdevils.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
-        caption=f"""this is the about of this bot
+        caption=f"""
 MY NAME:TELEGRAPH BOT
 CREATOR:@DEVOURDEVILS
 LIBRARY:PYROGRAM
@@ -624,9 +597,6 @@ BUILD STATUS:V1.0.2 [SIM]""",
         parse_mode="html",
         reply_to_message_id=message.message_id
       )   
-
-
-    
 
 @devourdevils.on_callback_query()
 async def button(Tgraph, update):
@@ -669,9 +639,5 @@ async def button(Tgraph, update):
       elif "about" in cb_data:
         await update.message.delete()
         await about(Tgraph, update.message)
-
-
-
-
 
 devourdevils.run()
