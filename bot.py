@@ -229,7 +229,6 @@ i'll upload it to telegra.ph and give you the direct link**""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
-  await msg.edit_text("hi")
     )
 
 
