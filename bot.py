@@ -616,10 +616,10 @@ LANGUAGE:PYTHON 3
 DATABASE:MONGO DB
 BOT SERVER:HEROKU
 BUILD STATUS:V1.0.2 [SIM]""",
-  await update.message.delete()
         reply_markup=reply_markup,
         parse_mode="html",
-        reply_to_message_id=message.message_id
+        reply_to_message_id=message.message_id,
+  await update.message.delete()
       )   
 
 @devourdevils.on_callback_query()
