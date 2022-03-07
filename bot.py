@@ -619,7 +619,6 @@ BUILD STATUS:V1.0.2 [SIM]""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id,
-  await update.message.delete()
       )   
 
 @devourdevils.on_callback_query()
