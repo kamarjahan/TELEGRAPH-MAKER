@@ -7,12 +7,11 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
-from bot.py import devourdevils
 
 
 
 
-@devourdevils.on_callback_query()
+@Client.on_callback_query()
 async def button(Tgraph, update):
       cb_data = update.data
       if "help" in cb_data:
