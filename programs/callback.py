@@ -7,7 +7,8 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
-from programs import commands
+from programs.commands import cmd
+
 
 
 
