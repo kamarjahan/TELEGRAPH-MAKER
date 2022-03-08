@@ -47,7 +47,7 @@ async def home(client, message):
 
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""<b>👋Hello {message.from_user.mention} ,
@@ -99,7 +99,7 @@ async def help(client, message):
         InlineKeyboardButton('bot info', callback_data='botinfo')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""hello  {message.from_user.mention},
@@ -154,7 +154,7 @@ async def cmd(client, message):
         InlineKeyboardButton('name', callback_data='name')    
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""Hello  {message.from_user.mention}
@@ -198,7 +198,7 @@ async def id(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""THIS IS YOUR ID ` -{message.from_user.id} `""",
@@ -239,7 +239,7 @@ async def dev(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""this is my developer information
@@ -285,7 +285,7 @@ async def telegraph(client, message):
         InlineKeyboardButton('back⏪', callback_data='cmd')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""SENT ME A PHOTO,VIDEO,GIF,OR ANY ANIMATION I WILL UPLOADNIT TO TELEGRAPH AND GIVE THE PERMENENT LINK""",
@@ -325,7 +325,7 @@ async def mention(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""THIS IS YOUR PERMENENT LINK {message.from_user.mention}""",
@@ -365,7 +365,7 @@ async def username(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""THIS IS YOUR CURRENT USERNAME @{message.from_user.username}""",
@@ -406,7 +406,7 @@ async def name(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.first_name} {message.from_user.last_name}""",
@@ -446,7 +446,7 @@ async def botinfo(client, message):
         InlineKeyboardButton('about', callback_data='about')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""hello bro/sis this is the bot information""",
@@ -486,7 +486,7 @@ async def about(client, message):
         InlineKeyboardButton('deploy own', url='https://heroku.com/deploy?template=https://github.com/kamarjahan/TELEGRAPH-MAKER')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await devourdevils.send_photo(
+  await Client.send_photo(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""
