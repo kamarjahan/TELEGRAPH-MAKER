@@ -99,9 +99,8 @@ async def help(client, message):
         InlineKeyboardButton('bot info', callback_data='botinfo')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""hello  {message.from_user.mention},
 this bot par may be add somany cool and hot fewtures in feuture want know the
 present commands of this bot click or press cmd button
@@ -154,13 +153,10 @@ async def cmd(client, message):
         InlineKeyboardButton('name', callback_data='name')    
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""Hello  {message.from_user.mention}
-  my commands are
-  /id to get your id
-  /dev to get my developers""",
+  my commands are""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -198,9 +194,8 @@ async def id(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""THIS IS YOUR ID ` -{message.from_user.id} `""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -239,9 +234,8 @@ async def dev(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""this is my developer information
 FIRST NAME:`DEVOUR`
 LAST NAME :`DEVIL`
@@ -285,9 +279,8 @@ async def telegraph(client, message):
         InlineKeyboardButton('back⏪', callback_data='cmd')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""SENT ME A PHOTO,VIDEO,GIF,OR ANY ANIMATION I WILL UPLOADNIT TO TELEGRAPH AND GIVE THE PERMENENT LINK""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -325,9 +318,8 @@ async def mention(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""THIS IS YOUR PERMENENT LINK {message.from_user.mention}""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -365,9 +357,8 @@ async def username(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""THIS IS YOUR CURRENT USERNAME @{message.from_user.username}""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -406,9 +397,8 @@ async def name(client, message):
         InlineKeyboardButton('⚕️Our Channel⚕️', url='t.me/septemberfilms')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.first_name} {message.from_user.last_name}""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -446,9 +436,8 @@ async def botinfo(client, message):
         InlineKeyboardButton('about', callback_data='about')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""hello bro/sis this is the bot information""",
         reply_markup=reply_markup,
         parse_mode="html",
@@ -486,9 +475,8 @@ async def about(client, message):
         InlineKeyboardButton('deploy own', url='https://heroku.com/deploy?template=https://github.com/kamarjahan/TELEGRAPH-MAKER')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""
 MY NAME:TELEGRAPH BOT
 CREATOR:@DEVOURDEVILS
