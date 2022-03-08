@@ -676,7 +676,7 @@ async def button(Tgraph, update):
         await update.message.delete()
         await about(Tgraph, update.message)
       elif update.data == "alert":
-        await update.answer("telegraph bot")
+        await update.answer("IAM A BOT USED MAIN PUPOSE IS UPLOAD TO TELEGRAPH AND MANY OTHER FEWTURES CREATED BY @DEVOURDEVILS", show_alert=True)
 
 
 devourdevils.run()
