@@ -48,7 +48,7 @@ async def home(client, message):
 
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.send_photo(
+  await Client.sendphoto(
         photo=random.choice(ALL_PIC),
         chat_id=message.chat.id,
         caption=f"""<b>👋Hello {message.from_user.mention} ,
