@@ -32,7 +32,7 @@ ALL_PIC = [
 ]
 
     
-@devourdevils.on_message(filters.command(["start"]))
+@Client.on_message(filters.command(["start"]))
 async def home(client, message):
   buttons = [[
 
@@ -85,7 +85,7 @@ ALL_PIC = [
 ]
 
 
-@devourdevils.on_message(filters.command(["help"]))
+@Client.on_message(filters.command(["help"]))
 async def help(client, message):
   buttons = [[
         InlineKeyboardButton('🏡Home', callback_data='home'),
@@ -133,7 +133,7 @@ ALL_PIC = [
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
 
-@devourdevils.on_message(filters.command(["cmd"]))
+@Client.on_message(filters.command(["cmd"]))
 async def cmd(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -187,7 +187,7 @@ ALL_PIC = [
 ]
 
 
-@devourdevils.on_message(filters.command(["id"]))
+@Client.on_message(filters.command(["id"]))
 async def id(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -228,7 +228,7 @@ ALL_PIC = [
 ]
 
 
-@devourdevils.on_message(filters.command(["dev"]))
+@Client.on_message(filters.command(["dev"]))
 async def dev(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -274,7 +274,7 @@ ALL_PIC = [
 ]
 
 
-@devourdevils.on_message(filters.command(["telegraph"]))
+@Client.on_message(filters.command(["telegraph"]))
 async def telegraph(client, message):
   buttons = [[
         InlineKeyboardButton('🏡Home', callback_data='home'),
@@ -314,7 +314,7 @@ ALL_PIC = [
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
 
-@devourdevils.on_message(filters.command(["mention"]))
+@Client.on_message(filters.command(["mention"]))
 async def mention(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -354,7 +354,7 @@ ALL_PIC = [
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
 
-@devourdevils.on_message(filters.command(["username"]))
+@Client.on_message(filters.command(["username"]))
 async def username(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -395,7 +395,7 @@ ALL_PIC = [
 ]
 
 
-@devourdevils.on_message(filters.command(["name"]))
+@Client.on_message(filters.command(["name"]))
 async def name(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
@@ -436,7 +436,7 @@ ALL_PIC = [
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
 
-@devourdevils.on_message(filters.command(["botinfo"]))
+@Client.on_message(filters.command(["botinfo"]))
 async def botinfo(client, message):
   buttons = [[
         InlineKeyboardButton('back⏪', callback_data='home'),
@@ -475,7 +475,7 @@ ALL_PIC = [
  "https://telegra.ph/file/e15f827c3e06982023ac7.jpg"
 ]
 
-@devourdevils.on_message(filters.command(["about"]))
+@Client.on_message(filters.command(["about"]))
 async def about(client, message):
   buttons = [[
         InlineKeyboardButton('back⏪', callback_data='botinfo'),
