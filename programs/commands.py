@@ -50,7 +50,6 @@ async def home(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
         caption=f"""<b>👋Hello {message.from_user.mention} ,
         
 `Am a telegraph Uploader That Can Upload Photo, Video And Gif
