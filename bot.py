@@ -675,9 +675,6 @@ async def button(Tgraph, update):
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await about(Tgraph, update.message)
-        await Media.collection.drop()
-        await message.answer()
-        await message.message.edit('here is')
       elif update.data == "alert":
         await update.answer("IAM A BOT USED MAIN PUPOSE IS UPLOAD TO TELEGRAPH AND MANY OTHER FEWTURES CREATED BY @DEVOURDEVILS", show_alert=True)
 
