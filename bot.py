@@ -1,5 +1,6 @@
 import os
 from pyrogram import Client
+from sample_config import Config
 
 
 
