@@ -48,9 +48,7 @@ async def home(client, message):
 
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Client.sendphoto(
-        photo=random.choice(ALL_PIC),
-        chat_id=message.chat.id,
+  await Client.sendPhoto(chat_id=update.effective_user.id,photo=ALL_PIC(f'{os.getcwd()}\\{update.effective_user.id}\\{i}', 'rb'))
         caption=f"""<b>👋Hello {message.from_user.mention} ,
         
 `Am a telegraph Uploader That Can Upload Photo, Video And Gif
