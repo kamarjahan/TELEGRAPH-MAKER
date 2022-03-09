@@ -17,3 +17,8 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['TG_BOT_TOKEN']
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+
+
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
