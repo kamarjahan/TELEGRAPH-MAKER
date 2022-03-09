@@ -1,5 +1,5 @@
 import os
-from pyrogram import client, filter
+from pyrogram import client, filters
 
 
 @Client.on_message(filter.regex(hi))
