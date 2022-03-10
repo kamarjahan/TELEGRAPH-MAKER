@@ -43,20 +43,7 @@ async def button(Tgraph, update):
             )
      
         )
-        await update.message.edit(
-            text="███25%"
-        )
-        await update.message.edit(
-            text="█████50%"
-        )
-        await update.message.edit(
-            text="████████75%"
-        )
-        await update.message.edit(
-            text="████████████100%"
-        )
-        await update.answer("JOIN @SEPTEMBERFILMS")
-        await update.message.delete() 
+        await update.answer("JOIN @SEPTEMBERFILMS") 
       elif "home" in cb_data:
         await update.message.edit(
             text="███25%"
@@ -237,4 +224,22 @@ async def button(Tgraph, update):
         await about(Tgraph, update.message)
       elif update.data == "alert":
         await update.answer("IAM A BOT USED MAIN PUPOSE IS UPLOAD TO TELEGRAPH AND MANY OTHER FEWTURES CREATED BY @DEVOURDEVILS", show_alert=True)
+      elif "mainclose" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+        
+        
+        
       
