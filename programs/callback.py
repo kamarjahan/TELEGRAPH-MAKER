@@ -147,7 +147,8 @@ async def button(Tgraph, update):
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await telegraph(Tgraph, update.message)
-      elif "name" in cb_data:await update.message.edit(
+      elif "name" in cb_data:
+        await update.message.edit(
             text="███25%"
         )
         await update.message.edit(
