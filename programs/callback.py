@@ -8,6 +8,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
 from programs.commands import cmd, help, home, dev, id, mention, telegraph, name, username, botinfo, about
+#dont remove this this is must
 
 
 
