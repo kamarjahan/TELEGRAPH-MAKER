@@ -37,9 +37,9 @@ async def button(Tgraph, update):
         await update.message.edit(
             text="want to realy close the current position"
             reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton("yes", callback_data='mainclose')
-            InlineKeyboardButton("no", callback_data='home')
-            ]]
+                InlineKeyboardButton("yes", callback_data='mainclose'),
+                InlineKeyboardButton("no", callback_data='home')
+                ]]
             )
      
         )
