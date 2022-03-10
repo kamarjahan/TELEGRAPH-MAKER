@@ -25,12 +25,12 @@
             "value": ""
        },
         "DATABASE_URI": {
-            "description": "url of the database in mongoDB made one in mongodb.com",
-            "value": ""
+            "description": "url of the database in mongoDB made one in mongodb.com.if you dont know create database use as default dont change",
+            "value": "mongodb+srv://public:public@cluster0.tuytd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB made one in mongodb.com",
-            "value": "K"
+            "description": "Name of the database in mongoDB made one in mongodb.com.if you dont know create database use as default dont change",
+            "value": "public"
         }
     },
     "addons": [],
