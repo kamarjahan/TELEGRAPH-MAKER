@@ -37,7 +37,7 @@ async def button(Tgraph, update):
         await update.message.edit(
             text="want to realy close the current position",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("yes", callback_data='mainclose'),
+                InlineKeyboardButton("yes", callback_data='chosecl'),
                 InlineKeyboardButton("no", callback_data='home')
                 ]]
             )
@@ -224,7 +224,7 @@ async def button(Tgraph, update):
         await about(Tgraph, update.message)
       elif update.data == "alert":
         await update.answer("IAM A BOT USED MAIN PUPOSE IS UPLOAD TO TELEGRAPH AND MANY OTHER FEWTURES CREATED BY @DEVOURDEVILS", show_alert=True)
-      elif "mainclose" in cb_data:
+      elif "chosecl" in cb_data:
         await update.message.edit(
             text="███25%"
         )
