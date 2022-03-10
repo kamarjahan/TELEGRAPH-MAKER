@@ -17,6 +17,18 @@ from programs.commands import cmd, help, home, dev, id, mention, telegraph, name
 async def button(Tgraph, update):
       cb_data = update.data
       if "help" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await help(Tgraph, update.message)
@@ -24,38 +36,146 @@ async def button(Tgraph, update):
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete() 
       elif "home" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await home(Tgraph, update.message)
       elif "help" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await help(Tgraph, update.message)
       elif "cmd" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await cmd(Tgraph, update.message)
       elif "dev" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await dev(Tgraph, update.message)
       elif "id" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await id(Tgraph, update.message)
       elif "mention" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await mention(Tgraph, update.message)
       elif "tgraph" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await telegraph(Tgraph, update.message)
-      elif "name" in cb_data:
+      elif "name" in cb_data:await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await name(Tgraph, update.message)
       elif "username" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await username(Tgraph, update.message)
@@ -77,6 +197,18 @@ async def button(Tgraph, update):
         await botinfo(Tgraph, update.message)
         
       elif "about" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await about(Tgraph, update.message)
