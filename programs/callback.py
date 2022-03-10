@@ -33,6 +33,18 @@ async def button(Tgraph, update):
         await update.message.delete()
         await help(Tgraph, update.message)
       elif "close" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete() 
       elif "home" in cb_data:
