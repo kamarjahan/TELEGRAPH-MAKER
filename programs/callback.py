@@ -60,13 +60,13 @@ async def button(Tgraph, update):
         await update.message.delete()
         await username(Tgraph, update.message)
       elif "botinfo" in cb_data:
-        await update.message("████25%")
-        await update.message.edit("█████50%")
-        await update.message.edit("████████75%")
-        await update.message.edit("████████████100%")
+        await update.message.edit(
+            text="hi"
+        )
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await botinfo(Tgraph, update.message)
+        
       elif "about" in cb_data:
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
