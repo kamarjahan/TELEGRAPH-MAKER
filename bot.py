@@ -13,4 +13,13 @@ devourdevils = Client(
 )
 
 
+    async def stop(self, *args):
+        await super().stop()
+        print("BRO BOT IS STOPPED BECAUSE YOUR HEROKU DINO IS EXHAUSTED TRANSFER YOUR ANY OTHER HEROKU ACCOUNT TO CONTINUE")
+
+
+app = Bot()
+
+
+
 devourdevils.run()
