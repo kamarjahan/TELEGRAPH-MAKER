@@ -484,7 +484,7 @@ LIBRARY:PYROGRAM
 LANGUAGE:PYTHON 3
 DATABASE:MONGO DB
         :redislabs
-BOT SERVER:HEROKU
+BOT SERVER:railway current
 BUILD STATUS:V2.0.0 [edit]""",
         reply_markup=reply_markup,
         parse_mode="html",
