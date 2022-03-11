@@ -11,13 +11,10 @@ requests
 imdbpy
 bs4
 # for interacting with te.legra.ph
-youtube-dl
-youtube_search
 googletrans==3.1.0a0
 aiohttp==3.7.4
 requests
 ffmpeg-python
-pytgcalls==0.0.17
 wheel
 psutil
 tgintegration
@@ -27,4 +24,3 @@ aiofiles
 wget
 youtube-search-python==1.4.6
 pyromod
-yt_dlp
