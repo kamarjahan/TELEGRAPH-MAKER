@@ -258,7 +258,7 @@ async def button(Tgraph, update):
         await status(Tgraph, update.message)
       elif "refresh" in cb_data:
         await update.message.edit(
-            text="
+            text="""
 TOTAL TIME:500H
 TIME SPENT:96H
 TIME LEFT.:404H(THEN IDLING)
@@ -269,7 +269,7 @@ BANNEDUSER:56
 GLOBAL BAN:8
 BOT BANNED:12
 BOT ADMINS:452
-   (IDLING)"
+   (IDLING)"""
         )   
         await update.answer("JOIN @SEPTEMBERFILMS")
            
