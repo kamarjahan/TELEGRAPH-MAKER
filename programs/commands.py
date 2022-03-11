@@ -478,13 +478,14 @@ async def about(client, message):
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""
-MY NAME:TELEGRAPH BOT
+MY NAME:[TELEGRAPH BOT](t.me/ddtelegraphbot
 CREATOR:@DEVOURDEVILS
-LIBRARY:PYROGRAM
-LANGUAGE:PYTHON 3
-DATABASE:MONGO DB
-BOT SERVER:HEROKU
-BUILD STATUS:V1.0.2 [SIM]""",
+LIBRARY:[PYROGRAM](docs.pyrogram.org)
+LANGUAGE:[PYTHON 3](python.org)
+DATABASE:[MONGO DB](mongodb.com)
+        :[redislabs](redislabs.com)
+BOT SERVER:[HEROKU](heroku.com)
+BUILD STATUS:[V2.0.0 [edit]](t.me/septemberfilms)""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id,
