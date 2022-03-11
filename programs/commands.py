@@ -522,6 +522,9 @@ async def status(client, message):
     [
         InlineKeyboardButton('back', callback_data='cmd'),
         InlineKeyboardButton('botinfo', callback_data='botinfo')
+    ],
+    [
+        InlineKeyboardButton('REFRESH', callback_data='refresh')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
