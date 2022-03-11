@@ -269,7 +269,7 @@ BANNEDUSER:56
 GLOBAL BAN:8
 BOT BANNED:12
 BOT ADMINS:452
-   (IDLING)"""
+   (IDLING)""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("refresh", callback_data='refresh'),
                 InlineKeyboardButton("home", callback_data='home')
