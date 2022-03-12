@@ -278,6 +278,84 @@ BOT ADMINS:`452`
             )
         ) 
         await update.answer("JOIN @SEPTEMBERFILMS")
+      elif "botinfo" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+        await botinfo(Tgraph, update.message)
+        
+      elif "about" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+        await about(Tgraph, update.message)
+      elif update.data == "alert":
+        await update.answer("IAM A BOT USED MAIN PUPOSE IS UPLOAD TO TELEGRAPH AND MANY OTHER FEWTURES CREATED BY @DEVOURDEVILS", show_alert=True)
+      elif "chosecl" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+      
+      elif "status" in cb_data:
+        await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+        await status(Tgraph, update.message)
+      elif "covid" in cb_data:
+        await update.message.edit(
+            text="""YOU WANT KNOW THE COVID RESUL TYPE /covid (contry name)
+ Eg:-. /covid india""",
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("back", callback_data='cmd'),
+                InlineKeyboardButton("home", callback_data='home')
+                ]]
+            )
+        ) 
+        await update.answer("JOIN @SEPTEMBERFILMS")
            
         
       
