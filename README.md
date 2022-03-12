@@ -41,7 +41,7 @@ Bot used for photo to link
 
 
 
-<details><summary>railway</summary>
+<details><summary>deploy to railway</summary>
 <p>
 <br>
 <a href="https://railway.app/new/template?code=o5fU5X&referralCode=AR0Ctn">
