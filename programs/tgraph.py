@@ -10,7 +10,7 @@ from pyrogram.types import (
 import logging
 
 
-@Client.on_message(filters.commands(["tgraph"]))
+@Client.on_message(filters.command(["tgraph"]))
 async def uploadphoto(client, message):
   msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ download.....join` @septemberfilms")
   userid = str(message.chat.id)
@@ -25,7 +25,7 @@ async def uploadphoto(client, message):
     await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
 
-@Client.on_message(filters.commands(["tgraph"]))
+@Client.on_message(filters.command(["tgraph"]))
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
@@ -50,7 +50,7 @@ import random
 
 
 
-@Client.on_message(filters.commands(["tgraph"]))
+@Client.on_message(filters.command(["tgraph"]))
 async def uploadphoto(client, message):
   msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
   userid = str(message.chat.id)
@@ -65,7 +65,7 @@ async def uploadphoto(client, message):
     await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
 
-@Client.on_message(filters.commands(["tgraph"]))
+@Client.on_message(filters.command(["tgraph"]))
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
@@ -82,7 +82,7 @@ async def uploadgif(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb join @septemberfilms")
 
-@Client.on_message(filters.commands(["tgraph"]))
+@Client.on_message(filters.command(["tgraph"]))
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
     msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ join` @septemberfilms")
