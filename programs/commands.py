@@ -50,14 +50,14 @@ async def home(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""<b>👋Hello {message.from_user.mention} ,
+        caption=f"""<b> 👋Hello {message.from_user.mention} ,
         
-`Am a telegraph Uploader That Can Upload Photo, Video And Gif
+</code>Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
 Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
 want know more about this bot click help button
         
-Made With Love By`</b> <a href="t.me/devourdevils">DEVOURDEVIL </a>""",
+Made With Love By</code> </b> <a href="t.me/devourdevils">DEVOURDEVIL </a>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -102,10 +102,10 @@ async def help(client, message):
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""`hello`  {message.from_user.mention},
-this bot par may be add somany cool and hot fewtures in feuture want know the
+</code>this bot par may be add somany cool and hot fewtures in feuture want know the
 present commands of this bot click or press cmd button
 and Just Send Me A Video/gif/photo under 5mb.
-i'll upload it to telegra.ph and give you the direct link**""",
+i'll upload it to telegra.ph and give you the direct link**</code>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -201,7 +201,7 @@ async def id(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""THIS IS YOUR ID ` -{message.from_user.id} `""",
+        caption=f"""THIS IS YOUR ID  </code>-{message.from_user.id}</code> """,
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -242,8 +242,8 @@ async def dev(client, message):
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""this is my developer information
-FIRST NAME:`DEVOUR`
-LAST NAME :`DEVIL`
+FIRST NAME:</code>DEVOUR</code>
+LAST NAME :</code>DEVIL</code>
 USERNAME  :@DEVOURDEVILS
 GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}""",
@@ -286,7 +286,7 @@ async def telegraph(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""SENT ME A PHOTO,VIDEO,GIF,OR ANY ANIMATION I WILL UPLOADNIT TO TELEGRAPH AND GIVE THE PERMENENT LINK""",
+        caption=f"""</code>SENT ME A PHOTO,VIDEO,GIF,OR ANY ANIMATION I WILL UPLOADNIT TO TELEGRAPH AND GIVE THE PERMENENT LINK</code>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -443,7 +443,7 @@ async def botinfo(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""hello bro/sis this is the bot information""",
+        caption=f"""</code>hello bro/sis this is the bot information</code>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -483,14 +483,14 @@ async def about(client, message):
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""
-MY NAME:`TELEGRAPH BOT`
+MY NAME:</code>TELEGRAPH BOT</code>
 CREATOR:@DEVOURDEVILS
-LIBRARY:`PYROGRAM`
-LANGUAGE:`PYTHON 3`
-DATABASE:`MONGO DB`
-        :`redislabs`
-BOT SERVER:`railway current`
-BUILD STATUS:`V2.0.0 [edit]`""",
+LIBRARY:</code>PYROGRAM</code>
+LANGUAGE:</code>PYTHON 3</code>
+DATABASE:</code>MONGO DB</code>
+        :</code>redislabs</code>
+BOT SERVER:</code>railway current</code>
+BUILD STATUS:</code>V2.0.0 [edit]</code>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id,
@@ -535,16 +535,16 @@ async def status(client, message):
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""
-TOTAL TIME:`500H`
-TIME SPENT:`96H`
-TIME LEFT.:`404H`(THEN IDLING)
-BOT STATUS:`ACTIVE` SINCE 96H
-TOTAL USER:`4529`
-TOTAL CHAT:`567`
-BANNEDUSER:`56`
-GLOBAL BAN:`8`
-BOT BANNED:`12`
-BOT ADMINS:`452`
+TOTAL TIME:</code>500h</code>
+TIME SPENT:</code>96H</code>
+TIME LEFT.:</code>404H</code>(THEN IDLING)
+BOT STATUS:</code>ACTIVE</code> SINCE 96H
+TOTAL USER:</code>4529</code>
+TOTAL CHAT:</code>567</code>
+BANNEDUSER:</code>56</code>
+GLOBAL BAN:</code>8</code>
+BOT BANNED:</code>12</code>
+BOT ADMINS:</code>452</code>
    (IDLING)""",
         reply_markup=reply_markup,
         parse_mode="html",
