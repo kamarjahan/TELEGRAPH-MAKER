@@ -260,16 +260,16 @@ async def button(Tgraph, update):
         await update.message.edit(
             text="""
     [REFRESHED]
-TOTAL TIME:500H
-TIME SPENT:96H
-TIME LEFT.:404H(THEN IDLING)
-BOT STATUS:ACTIVE SINCE 96H
-TOTAL USER:4529
-TOTAL CHAT:567
-BANNEDUSER:56
-GLOBAL BAN:8
-BOT BANNED:12
-BOT ADMINS:452
+TOTAL TIME:`500H`
+TIME SPENT:`96H`
+TIME LEFT.:`404H`(THEN IDLING)
+BOT STATUS:`ACTIVE` SINCE 96H
+TOTAL USER:`4529`
+TOTAL CHAT:`567`
+BANNEDUSER:`56`
+GLOBAL BAN:`8`
+BOT BANNED:`12`
+BOT ADMINS:`452`
    (IDLING)""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton("refresh", callback_data='refresh'),
