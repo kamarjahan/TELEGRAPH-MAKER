@@ -7,7 +7,7 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
-from programs.commands import cmd, help, home, dev, id, mention, telegraph, name, username, botinfo, about
+from programs.commands import cmd, help, home, dev, id, mention, telegraph, name, username, botinfo, about, status
 #dont remove this this is must
 
 
