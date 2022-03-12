@@ -259,6 +259,7 @@ async def button(Tgraph, update):
       elif "refresh" in cb_data:
         await update.message.edit(
             text="""
+    [REFRESHED]
 TOTAL TIME:500H
 TIME SPENT:96H
 TIME LEFT.:404H(THEN IDLING)
