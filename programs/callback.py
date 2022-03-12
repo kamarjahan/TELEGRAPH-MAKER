@@ -347,6 +347,18 @@ BOT ADMINS:`452`
         await status(Tgraph, update.message)
       elif "covid" in cb_data:
         await update.message.edit(
+            text="███25%"
+        )
+        await update.message.edit(
+            text="█████50%"
+        )
+        await update.message.edit(
+            text="████████75%"
+        )
+        await update.message.edit(
+            text="████████████100%"
+        )
+        await update.message.edit(
             text="""YOU WANT KNOW THE COVID RESUL TYPE /covid (contry name)
  Eg:-. /covid india""",
             reply_markup=InlineKeyboardMarkup( [[
