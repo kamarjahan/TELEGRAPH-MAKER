@@ -153,7 +153,7 @@ async def cmd(client, message):
         InlineKeyboardButton('name', callback_data='name')    
     ],
     [
-        InlineKeyboardButton('status', callback_data='status'),
+        InlineKeyboardButton('status', callback_data='status')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
