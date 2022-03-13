@@ -7,7 +7,7 @@ from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery, Message)
-from programs.commands import cmd, help, home, dev, id, mention, telegraph, name, username, botinfo, about, status
+from programs.commands import cmd, help, home, dev, id, mention, telegraph, name, username, botinfo, about, status, corona
 #dont remove this this is must
 
 
@@ -358,16 +358,10 @@ BOT ADMINS:`452`
         await update.message.edit(
             text="████████████100%"
         )
-        await update.message.edit(
-            text="""YOU WANT KNOW THE COVID RESULt TYPE /covid (contry name)
- Eg:-. /covid india""",
-            reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("back", callback_data='cmd'),
-                InlineKeyboardButton("home", callback_data='home')
-                ]]
-            )
-        ) 
         await update.answer("JOIN @SEPTEMBERFILMS")
+        await update.message.delete()
+        await corona(Tgraph, update.message)
+       
            
         
       
