@@ -345,23 +345,3 @@ BOT ADMINS:`452`
         await update.answer("JOIN @SEPTEMBERFILMS")
         await update.message.delete()
         await status(Tgraph, update.message)
-      elif "covid" in cb_data:
-        await update.message.edit(
-            text="███25%"
-        )
-        await update.message.edit(
-            text="█████50%"
-        )
-        await update.message.edit(
-            text="████████75%"
-        )
-        await update.message.edit(
-            text="████████████100%"
-        )
-        await update.answer("JOIN @SEPTEMBERFILMS")
-        await update.message.delete()
-        await corona(Tgraph, update.message)
-       
-           
-        
-      
