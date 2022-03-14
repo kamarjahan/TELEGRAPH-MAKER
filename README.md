@@ -44,8 +44,7 @@ Bot used for photo to link
 <details><summary>deploy to railway</summary>
 <p>
 <br>
-<a href="https://railway.app/new/template?code=o5fU5X&referralCode=AR0Ctn">
-  <img src="https://railway.app/button.svg" alt="Deploy">
+<a href="(https://railway.app/button.svg)(https://railway.app/new/template/JQN1qR&referralCode=Devour)">
 
 
 THIS BOT WILL DEPLOY ON RAILWAY SUSSESLY BECAUSE RAILWAY ACCEPTED THE BOT
