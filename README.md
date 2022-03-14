@@ -47,7 +47,6 @@ Bot used for photo to link
 
 
 
-
 THIS BOT WILL DEPLOY ON RAILWAY SUSSESLY BECAUSE RAILWAY ACCEPTED THE BOT
 </a>
 </p>
