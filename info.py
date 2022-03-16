@@ -11,14 +11,14 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['APP_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['TG_BOT_TOKEN']
+SESSION = "Media_search"
+API_ID = "17875613"
+API_HASH = "6798f54a7f74e94f2ef0923fba8a8377"
+BOT_TOKEN = "5195945385:AAGxrtvKw-ZDJbq_1MLgmxnG2ThyTGvasCQ"
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = "mongodb+srv://k:k@cluster0.aeenl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_NAME = "telegraph"
+COLLECTION_NAME = "Telegram_files"
