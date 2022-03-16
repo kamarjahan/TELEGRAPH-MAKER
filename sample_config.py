@@ -2,23 +2,16 @@ import os
 
 
 class Config(object):
-    TG_BOT_TOKEN = "5195945385:AAGxrtvKw-ZDJbq_1MLgmxnG2ThyTGvasCQ"
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-    APP_ID = "17875613"
+    APP_ID = int(os.environ.get("APP_ID", 12345))
 
-    API_HASH = "6798f54a7f74e94f2ef0923fba8a8377"
+    API_HASH = os.environ.get("API_HASH", "")
     
-    TG_BOT_USERNAME = "ddtelegraphbot"
+    TG_BOT_USERNAME = os.environ.get("TG_BOT_USERNAME", "")
     
-    START_MESSAGE = "hi"
+    START_MESSAGE = os.environ.get("START_MESSAGE", "")
     
-    DATABASE_URI = "mongodb+srv://k:k@cluster0.aeenl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-    DATABASE_NAME = 'telegraph'
-    COLLECTION_NAME = 'telegram_files'  # If you are using the same database, then use different collection name for each bot
-
-    
-
-    
-    
-    
-      
+    DATABASE_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]?retryWrites=true&w=majority"
+    DATABASE_NAME = 'Telegram'
+    COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
