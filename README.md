@@ -4,6 +4,13 @@ Bot used for photo to link
 
 # Telegraph-MAKER
 
+
+##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+telegraph maker;created+by+𝑻𝑬𝑨𝑴+devour+devils!;A+simple+Bot!;+filter+!;start+message+with+pic!;and+all+futures!)
+</p>
+
+
+
+
   </a>
 </p>
 <p align="center">
