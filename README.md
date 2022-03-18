@@ -65,13 +65,17 @@ A Telegram Bot Written In Python. Which helps To Upload Media's like gif video a
 <details><summary>Local Machine</summary>
 <p>
 <br>
-Clone the repository
+#first clone repo use this cmd
+  
+  `sudo apt install git`
+  `git clone https://github.com/kamarjahan/TELEGRAPH-MAKER.git`
 
-Install requirements: pip3 install -r requirements.txt
+#Install requirements use this cmd
+  `sudo apt install pip` or `sudo apt install python3-pip`
+  `pip3 install -r requirements.txt`
 
-edit the sample_config.py wih your configs
-
-python3 bot.py
+#edit the sample_config.py wih your configs then run this cmd
+  `python3 bot.py`
 
 Now send /start to you bot to see if it is running!
 </a>
