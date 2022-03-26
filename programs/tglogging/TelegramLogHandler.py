@@ -9,7 +9,7 @@ logging.basicConfig(
     datefmt='%d-%b-%y %H:%M:%S',
     handlers=[
         TelegramLogHandler(
-            token="12345678:AbCDEFGhiJklmNoPQRTSUVWxyZ", 
+            token=Config.TG_BOT_TOKEN, 
             log_chat_id=-10225533666, 
             update_interval=2, 
             minimum_lines=1, 
