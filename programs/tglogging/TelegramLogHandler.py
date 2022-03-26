@@ -1,5 +1,5 @@
 import logging
-from tglogging import TelegramLogHandler
+from programs.tglogging import tglogger
 
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 
