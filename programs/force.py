@@ -1,12 +1,12 @@
 import os
 from pyrogram.types import InlineKeyBoardMarkup, InlineKeyboardButton
 from pyrograms.errors import UserNotParticipant
-from pyrogram import client, filters
+from pyrogram import filters, Client
 
 force_channel = "septemberfilms"
 
 
-@client.on_message(filters.command(["force"]))
+@Client.on_message(filters.command(["force"]))
 acync def force(client, msg):
         if force_channel:
         try:
