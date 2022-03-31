@@ -31,6 +31,7 @@ async def home(client, message):
     [
 
     ]]
+
     if force_channel:
         try:
             user = await client.get_chat_member(force_channel, message.from_user.id)
