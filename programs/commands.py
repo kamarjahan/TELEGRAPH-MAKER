@@ -19,6 +19,18 @@ force_channel = "septemberfilms"
     
 @Client.on_message(filters.command(["start"]))
 async def home(client, message):
+  buttons = [[
+
+        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
+    ],
+    [
+
+        InlineKeyboardButton('🤔Help', callback_data='help'),
+        InlineKeyboardButton('Close🔐', callback_data='close')
+    ],
+    [
+
+    ]]
     if f:
         try:
             user = await client.get_chat_member(force_channel, message.from_user.id)
@@ -37,18 +49,7 @@ async def home(client, message):
     
             
                                      
-  buttons = [[
 
-        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
-    ],
-    [
-
-        InlineKeyboardButton('🤔Help', callback_data='help'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
-    ],
-    [
-
-    ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
