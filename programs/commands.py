@@ -21,23 +21,7 @@ from program import force
 @Client.on_message(filters.command(["start"]))
 async def home(client, message):
     {FORCE_CODE}
-  buttons = [[
-
-        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
-    ],
-    [
-
-        InlineKeyboardButton('🤔Help', callback_data='help'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
-    ],
-    [
-
-    ]]
-
-
-    
-            
-                                     
+                                 
 
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
