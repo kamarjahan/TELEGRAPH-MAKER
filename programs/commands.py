@@ -31,7 +31,7 @@ async def home(client, message):
     [
 
     ]]
-    if f:
+    if force_channel:
         try:
             user = await client.get_chat_member(force_channel, message.from_user.id)
             if user.status == "you removed":
