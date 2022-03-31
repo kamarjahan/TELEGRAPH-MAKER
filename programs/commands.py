@@ -11,6 +11,7 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
+from programs.force import force_channel
 
 
 
@@ -20,6 +21,22 @@ from pyrogram.errors import UserNotParticipant
     
 @Client.on_message(filters.command(["start"]))
 async def home(client, message):
+    if force_channel:
+        try:
+            user = await bot.get_chat_member(force_channel, msg.from_user.id)
+            if user.status == "you removed":
+                await msg.reply_text("you are banned")
+                return
+        except UserNotParticipant:
+            await msg.reply_text(
+                text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
+                reply_markup=InlineKeyboardMarkup( [[
+                 InlineKeyboardButton("join update channel", url=f"t.me/{force_channel}")
+                 ]]
+                )
+            )
+            return
+
   buttons = [[
         InlineKeyboardButton('🏡Home', callback_data='home'),
         InlineKeyboardButton('Close🔐', callback_data='close')
