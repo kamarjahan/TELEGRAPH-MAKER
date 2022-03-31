@@ -29,7 +29,10 @@ async def home(client, message):
              await message.reply_text(
                  text="your not sub my grp",
                  reply_markup=InlineKeyboardMarkup
-                  InlineKeyboardButton("join update", url=f'
+                  InlineKeyboardButton("join update", url=f't.me/{f})
+                  ]]
+                 )
+             )
     
             
                                      
