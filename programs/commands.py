@@ -32,21 +32,7 @@ async def home(client, message):
 
     ]]
 
-    if force_channel:
-        try:
-            user = await client.get_chat_member(force_channel, message.from_user.id)
-            if user.status == "you removed":
-                await msg.reply_text("you are banned")
-                return
-        except UserNotParticipant:
-            await message.reply_text(
-                 text="your not sub my grp",
-                 reply_markup=InlineKeyboardMarkup( [[
-                  InlineKeyboardButton("join update", url=f"t.me/{force_channel}")
-                  ]]
-                 )
-            )
-            return
+
     
             
                                      
