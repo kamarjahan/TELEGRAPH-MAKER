@@ -25,8 +25,8 @@ async def home(client, message):
             if user.status == "you removed":
                 await msg.reply_text("you are banned")
                 return
-         except UserNotParticipant:
-             await message.reply_text(
+        except UserNotParticipant:
+            await message.reply_text(
                  text="your not sub my grp",
                  reply_markup=InlineKeyboardMarkup
                   InlineKeyboardButton("join update", url=f't.me/{f})
