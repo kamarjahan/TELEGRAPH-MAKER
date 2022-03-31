@@ -33,6 +33,7 @@ async def home(client, message):
                   ]]
                  )
              )
+             return
     
             
                                      
