@@ -7,7 +7,7 @@ force_channel = "septemberfilms"
 
 
 @client.on_message(filters.command(["force"]))
-acync def force(client,msg):
+acync def force(client, msg):
         if force_channel:
         try:
             user = await client.get_chat_member(force_channel, msg.from_user.id)
