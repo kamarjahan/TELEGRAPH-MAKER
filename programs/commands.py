@@ -11,7 +11,7 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
-from program import force
+
 
 
 
