@@ -6,7 +6,7 @@ from pyrogram import filters, Client
 force_channel = "ababababaabb"
 
 
-@Client.on_message(filters.command(["start"]))
+@Client.on_message(filters.command(["fv"]))
 async def start(bot, msg):
     if force_channel:
         try:
