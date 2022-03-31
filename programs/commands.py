@@ -11,14 +11,16 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
+from program import force
 
 
-force_channel = "septemberfilms"
+
 
 
     
 @Client.on_message(filters.command(["start"]))
 async def home(client, message):
+    {FORCE_CODE}
   buttons = [[
 
         InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
