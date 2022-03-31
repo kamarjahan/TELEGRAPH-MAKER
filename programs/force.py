@@ -1,6 +1,6 @@
 import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from pyrograms.errors import UserNotParticipant
+from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 
 force_channel = "septemberfilms"
