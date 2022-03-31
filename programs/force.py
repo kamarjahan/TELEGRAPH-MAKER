@@ -49,7 +49,7 @@ FORCE_CODE = """if force_channel:
 
 
 
-buttons1 = [[
+BUTTONS1 = [[
 
         InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
     ],
