@@ -23,7 +23,7 @@ async def home(client, message):
     {FORCE_CODE}
                                  
 
-  reply_markup = InlineKeyboardMarkup(buttons)
+  reply_markup = InlineKeyboardMarkup({BUTTONS1})
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""<b> 👋Hello {message.from_user.mention} ,
