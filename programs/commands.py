@@ -32,8 +32,8 @@ async def home(client, message):
                   InlineKeyboardButton("join update", url=f"t.me/{force_channel}")
                   ]]
                  )
-             )
-             return
+            )
+            return
     
             
                                      
