@@ -16,9 +16,9 @@ async def force(bot, msg):
                 return
         except UserNotParticipant:
             await msg.reply_text(
-                text="your not sub my grp",
+                text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
                 reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("join update", url=f"t.me/{force_channel}")
+                 InlineKeyboardButton("join update channel", url=f"t.me/{force_channel}")
                  ]]
                 )
             )
