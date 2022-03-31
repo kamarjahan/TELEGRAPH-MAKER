@@ -21,8 +21,8 @@ async def force(bot, msg):
                  InlineKeyboardButton("join update", url=f"t.me/{force_channel}")
                  ]]
                 )
-           )
-           return
+            )
+            return
     await msg.reply_text("hi")
 
 
