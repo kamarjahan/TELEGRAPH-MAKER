@@ -23,12 +23,12 @@ from programs.force import force_channel, BUTTONS1
 async def home(client, message):
     if force_channel:
         try:
-            user = await bot.get_chat_member(force_channel, msg.from_user.id)
+            user = await client.get_chat_member(force_channel, message.from_user.id)
             if user.status == "you removed":
-                await msg.reply_text("you are banned")
+                await message.reply_text("you are banned")
                 return
         except UserNotParticipant:
-            await msg.reply_text(
+            await message.reply_text(
                 text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
                 reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("join update channel", url=f"t.me/{force_channel}")
