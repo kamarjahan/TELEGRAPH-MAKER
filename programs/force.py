@@ -2,7 +2,7 @@ import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
-from programs import cody
+from programs.cody import F_C
 
 
 
