@@ -1,5 +1,5 @@
 import os
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, message
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 
@@ -27,7 +27,7 @@ async def start(bot, msg):
             )
             return
     await msg.reply_text("your request send to mg db reply soon as possible")
-    await message.delete()
+    await msg.Message.delete()
 
 
 
