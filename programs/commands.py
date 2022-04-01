@@ -11,7 +11,7 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
-from programs.force import force_channel, BUTTONS1
+from programs import cody
 
 
 
@@ -21,9 +21,9 @@ from programs.force import force_channel, BUTTONS1
     
 @Client.on_message(filters.command(["start"]))
 async def home(client, message):
-    if force_channel:
+    if F_C:
         try:
-            user = await client.get_chat_member(force_channel, message.from_user.id)
+            user = await client.get_chat_member(F_C, message.from_user.id)
             if user.status == "you removed":
                 await message.reply_text("you are banned")
                 return
@@ -31,7 +31,7 @@ async def home(client, message):
             await message.reply_text(
                 text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
                 reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
+                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{F_C}"),
                  ],[
                  InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/ddtelegraphbot?start=start_")
                  ]]
