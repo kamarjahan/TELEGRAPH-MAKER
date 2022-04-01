@@ -37,20 +37,6 @@ async def home(client, message):
             )
             return
 
-
-  reply_markup = InlineKeyboardMarkup( [[
-        InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
-        ],
-        [
-
-        InlineKeyboardButton('🤔Help', callback_data='help'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
-        ],
-        [
-        ]]
-        )
-  )
-
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""<b> 👋Hello {message.from_user.mention} ,
