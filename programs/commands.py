@@ -36,10 +36,17 @@ async def home(client, message):
                 )
             )
             return
-
-  await message.reply_photo(
-        photo=random.choice(ALL_PIC),
-        caption=f"""<b> 👋Hello {message.from_user.mention} ,
+            reply_markup = InlineKeyboardMarkup( [[
+             InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
+             ],[
+             InlineKeyboardButton('🤔Help', callback_data='help'),
+             InlineKeyboardButton('Close🔐', callback_data='close')
+             ]]
+             )
+            )
+            await message.reply_photo(
+            photo=random.choice(ALL_PIC),
+            caption=f"""<b> 👋Hello {message.from_user.mention} ,
         
 </code>Am a telegraph Uploader That Can Upload Photo, Video And Gif
         
@@ -47,10 +54,10 @@ Simply send me photo, video or gif under 5MB I will upload it to Telegra.ph
 want know more about this bot click help button
         
 Made With Love By</code> </b> <a href="t.me/devourdevils">DEVOURDEVIL </a>""",
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=message.message_id
-    )
+            reply_markup=reply_markup,
+            parse_mode="html",
+            reply_to_message_id=message.message_id
+            )
 
 
 
