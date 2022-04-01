@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 
-force_channel = "ababababaabb"
+force_channel = "septemberfilms"
 
 
 @Client.on_message(filters.command(["fv"]))
