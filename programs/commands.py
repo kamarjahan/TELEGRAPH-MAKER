@@ -11,7 +11,7 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
-from programs.force import force_channel
+from programs.force import force_channel, BUTTONS1
 
 
 
@@ -37,18 +37,8 @@ async def home(client, message):
             )
             return
 
-  buttons = [[
-        InlineKeyboardButton('🏡Home', callback_data='home'),
-        InlineKeyboardButton('Close🔐', callback_data='close')
-    ],
-    [
-        InlineKeyboardButton('⚕️Our group⚕️', url='t.me/septemberfilms'),
-        InlineKeyboardButton('cmd', callback_data='cmd')
-    ],
-    [   
-        InlineKeyboardButton('bot info', callback_data='botinfo')
-    ]]
-  reply_markup = InlineKeyboardMarkup(buttons)
+
+  reply_markup = InlineKeyboardMarkup({BUTTONS1})
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"""<b> 👋Hello {message.from_user.mention} ,
