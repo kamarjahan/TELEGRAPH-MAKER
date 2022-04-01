@@ -6,7 +6,7 @@ from pyrogram import filters, Client
 force_channel = "septemberfilms"
 
 
-@Client.on_message(filters.text & filters.ptivate)
+@Client.on_message(filters.text & filters.private)
 async def start(bot, msg):
     if force_channel:
         try:
