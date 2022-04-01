@@ -2,8 +2,8 @@ import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
+from programs import cody
 
-force_channel = "septemberfilms"
 
 
 @Client.on_message(filters.text & filters.private & filters.photo & filters.video & filters.incoming)
@@ -26,7 +26,6 @@ async def start(bot, msg):
             )
             return
     await msg.reply_text("your request send to mg db reply soon as possible")
-    await msg.message.delete()
 
 
 
