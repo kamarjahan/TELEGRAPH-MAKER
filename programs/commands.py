@@ -43,7 +43,6 @@ async def home(client, message):
              InlineKeyboardButton('Close🔐', callback_data='close')
              ]]
              )
-            )
             await message.reply_photo(
             photo=random.choice(ALL_PIC),
             caption=f"""<b> 👋Hello {message.from_user.mention} ,
