@@ -2,15 +2,16 @@ import os
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
-from programs.cody import F_C
 
+
+force_channel = "septemberfilms"
 
 
 @Client.on_message(filters.text & filters.private & filters.photo & filters.video & filters.incoming)
 async def start(bot, msg):
-    if F_C:
+    if force_channel:
         try:
-            user = await bot.get_chat_member(F_C, msg.from_user.id)
+            user = await bot.get_chat_member(force_channel, msg.from_user.id)
             if user.status == "you removed":
                 await msg.reply_text("you are banned")
                 return
@@ -18,7 +19,7 @@ async def start(bot, msg):
             await msg.reply_text(
                 text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
                 reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{F_C}"),
+                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
                  ],[
                  InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/ddtelegraphbot?start=start_")  
                  ]]
