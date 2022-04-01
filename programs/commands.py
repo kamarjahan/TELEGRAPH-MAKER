@@ -11,7 +11,7 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
-from programs import cody
+from programs.cody import F_C
 
 
 
