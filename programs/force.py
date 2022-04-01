@@ -18,7 +18,9 @@ async def start(bot, msg):
             await msg.reply_text(
                 text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
                 reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("join update channel", url=f"t.me/{force_channel}")
+                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
+                 ],[
+                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/ddtelegraphbot?start=start_")  
                  ]]
                 )
             )
