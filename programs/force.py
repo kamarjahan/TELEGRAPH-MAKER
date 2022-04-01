@@ -6,7 +6,7 @@ from pyrogram import filters, Client
 force_channel = "septemberfilms"
 
 
-@Client.on_message(filters.text)
+@Client.on_message(filters.text & filters.ptivate)
 async def start(bot, msg):
     if force_channel:
         try:
@@ -25,7 +25,7 @@ async def start(bot, msg):
                 )
             )
             return
-    await msg.reply_text("your subscription added to db now you can use the bot")
+    await msg.reply_text("your request send to mg db reply soon as possible")
 
 
 
