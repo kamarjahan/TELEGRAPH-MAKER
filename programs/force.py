@@ -2,7 +2,7 @@ import os
 from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
-    CallbackQuery, InlineQuery, Message, delete)
+    CallbackQuery, InlineQuery, Message)
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 
