@@ -30,7 +30,6 @@ async def start(bot, msg):
             )
             return
     await msg.reply_text("your request send to mg db reply soon as possible")
-    m.delete()
     Message.delete()
 
 
