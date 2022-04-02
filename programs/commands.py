@@ -12,7 +12,7 @@ import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
 from programs.force import force_channel
-from programs.donttouch import START_TEXT, HELP_TEXT, CMD_TEXT, ID_TEXT, TGP_TEXT, ABOUT_TEXT, STATUS_INFO 
+from programs.donttouch.trl import START_TEXT, HELP_TEXT, CMD_TEXT, ID_TEXT, TGP_TEXT, ABOUT_TEXT, STATUS_INFO 
 
 
 
