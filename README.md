@@ -25,7 +25,10 @@ Bot used for photo to link
   </a>  
 </p>
 
-<details><summary>Deploy To Heroku</summary>
+#DEPLOY
+
+
+<details><summary>DEPLOY TO HEROKU</summary>
 <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/kamarjahan/TELEGRAPH-MAKER">
@@ -37,7 +40,7 @@ Bot used for photo to link
 
 
 
-<details><summary>Deploy To tg bot</summary>
+<details><summary>DEPLOY TO TG BOT</summary>
 <p>
 <br>
 <a href="https://telegram.dog/XTZ_HerokuBot?start=a2FtYXJqYWhhbi9URUxFR1JBUEgtTUFLRVIgbWFpbg">
@@ -48,9 +51,20 @@ Bot used for photo to link
 
 
 
-#deploy to railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/JQN1qR&referralCode=Devour)
+
+<details><summary>DEPLOY TO RAILWAY</summary>
+<p>
+<br>
+<a href="https://railway.app/new/template/9pTPfF?referralCode=Devour">
+  <img src="https://railway.app/button.svg" alt="Deploy">
+  
+THIS BOT WILL DEPLOY ON RAILWAY SUSSESLY BECAUSE RAILWAY ACCEPTED THE BOT
+  
+</a>
+</p>
+</details>
+
 
 
 
