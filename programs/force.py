@@ -70,6 +70,6 @@ BUTTONS1 = [[
 
 
 
-
+#clear
 
 
