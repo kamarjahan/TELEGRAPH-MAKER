@@ -1,5 +1,8 @@
 import os
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.types import (
+    InlineQueryResultArticle, InputTextMessageContent,
+    InlineKeyboardMarkup, InlineKeyboardButton,
+    CallbackQuery, InlineQuery, Message)
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 
