@@ -27,7 +27,10 @@ async def start(bot, msg):
             )
             return
     await msg.reply_text("your request send to mg db reply soon as possible")
-    message.delete()
+    bot.delete_messages(
+    chat_id=chat_id,
+    message_ids=message.message_id
+)
 
 
 
