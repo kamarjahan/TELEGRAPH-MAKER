@@ -48,7 +48,7 @@ async def home(client, message):
      )
     await message.reply_photo(
     photo=random.choice(ALL_PIC),
-    caption=f"""{START_TEXT}""",
+    caption=f"""{START_TEXT} {message.from_user.mention}""",
      reply_markup=reply_markup,
      parse_mode="html",
      reply_to_message_id=message.message_id
@@ -73,7 +73,7 @@ async def help(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""{HELP_TEXT}""",
+        caption=f"""{HELP_TEXT} {message.from_user.mention}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -110,7 +110,7 @@ async def cmd(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-    caption=f"""{CMD_TEXT}""",
+    caption=f"""{CMD_TEXT} {message.from_user.mention}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -132,7 +132,7 @@ async def id(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""{ID_TEXT}""",
+        caption=f"""{ID_TEXT} </code>-{message.from_user.id}</code>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -154,7 +154,12 @@ async def dev(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"""{DEV_TEXT}""",
+        caption=f"""this is my developer information
+FIRST NAME:</code>DEVOUR</code>
+LAST NAME :</code>DEVIL</code>
+USERNAME  :@DEVOURDEVILS
+GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
+WHO ASKED DEV INFO :{message.from_user.mention}""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
