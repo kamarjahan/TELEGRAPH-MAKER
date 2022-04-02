@@ -15,7 +15,7 @@ from programs.force import force_channel
 
 
 
-@Client.on_message(filters.command([df]))
+@Client.on_message(filters.command(["df"]))
 async def fg(bot, msg):
   await msg.reply_text("your request send to mg db reply soon as possible")
   Message.delete()
