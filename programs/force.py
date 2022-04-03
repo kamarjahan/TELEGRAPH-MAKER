@@ -5,6 +5,7 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
+from programs.donttouch.tr import USERNAME
 
 #errro
 
@@ -25,7 +26,7 @@ async def start(bot, msg):
                 reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
                  ],[
-                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/ddtelegraphbot?start=start_")  
+                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/{USERNAME}?start=start_")  
                  ]]
                 )
             )
