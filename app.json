@@ -31,6 +31,10 @@
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB made one in mongodb.com.if you dont know create database use as default dont change",
             "value": "public"
+        },
+        "USERNAME": {
+            "description": "your telegram bot username without @ or t.me.  this is must if you dont entr your bot button will down",
+            "value": "ddtelegraphbot"
         }
     },
     "addons": [],
