@@ -65,6 +65,6 @@ BOT BANNED:</code>12</code>
 BOT ADMINS:</code>452</code>
    (IDLING)"""
 
-USERNAME = Config.USERNAME,
+USERNAME = "ddtelegraphbot"
 
 
