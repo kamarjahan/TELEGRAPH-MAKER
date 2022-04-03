@@ -12,7 +12,7 @@ import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
 from programs.force import force_channel
-from programs.donttouch.trl import START_TEXT, HELP_TEXT, CMD_TEXT, ID_TEXT, TGP_TEXT, ABOUT_TEXT, STATUS_INFO 
+from programs.donttouch.trl import START_TEXT, HELP_TEXT, CMD_TEXT, ID_TEXT, TGP_TEXT, ABOUT_TEXT, STATUS_INFO, USERNAME 
 
 
 
@@ -34,13 +34,13 @@ async def home(client, message):
                 reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
                  ],[
-                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/ddtelegraphbot?start=start_")
+                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/{USERNAME}?start=start_")
                  ]]
                 )
             )
             return
     reply_markup = InlineKeyboardMarkup( [[
-     InlineKeyboardButton('ADD ME TO GROUP', url='t.me/ddtelegraphbot?startgroup=true'),
+     InlineKeyboardButton('ADD ME TO GROUP', url='t.me/{USERNAME}?startgroup=true'),
      ],[
      InlineKeyboardButton('🤔Help', callback_data='help'),
      InlineKeyboardButton('Close🔐', callback_data='close')
