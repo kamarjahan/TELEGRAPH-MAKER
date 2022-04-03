@@ -11,7 +11,6 @@ import logging
 import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
-from programs.force import force_channel
 from sample_config import Config
 
 
