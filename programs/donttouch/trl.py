@@ -12,6 +12,7 @@ import random
 from programs.pics import ALL_PIC
 from pyrogram.errors import UserNotParticipant
 from programs.force import force_channel
+from sample_config import Config
 
 
 
@@ -64,5 +65,7 @@ GLOBAL BAN:</code>8</code>
 BOT BANNED:</code>12</code>
 BOT ADMINS:</code>452</code>
    (IDLING)"""
+
+USERNAME = Config.USERNAME,
 
 
