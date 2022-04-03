@@ -5,7 +5,7 @@ from pyrogram.types import (
     CallbackQuery, InlineQuery, Message)
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
-from programs.donttouch.tr import USERNAME
+from programs.donttouch.trl import USERNAME
 
 #errro
 
