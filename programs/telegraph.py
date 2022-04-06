@@ -45,9 +45,10 @@ async def uploadphoto(client, message):
     await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
     reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
+                 InlineKeyboardButton("OPEN LINK", url=f"https://telegra.ph{tlink[0]}"),
+                 InlineKeyboardButton("DEV", url=f"t.me/devourdevils"),
                  ],[
-                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/{USERNAME}?start=start_")
+                 InlineKeyboardButton("GROUP", url=f"t.me/septemberfilms")
                  ]]
                 )
             
