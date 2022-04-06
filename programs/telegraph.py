@@ -37,7 +37,7 @@ async def uploadphoto(client, message):
                  InlineKeyboardButton("GROUP", url=f"t.me/septemberfilms")
                  ]]
                 )
-            )
+            
 
 @Client.on_message(filters.animation)
 async def uploadgif(client, message):
