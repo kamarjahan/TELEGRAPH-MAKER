@@ -12,27 +12,7 @@ from programs.donttouch.trl import USERNAME
 force_channel = "septemberfilms"
 
 
-@Client.on_message(filters.private)
-async def start(bot, msg):
-    if force_channel:
-        try:
-            user = await bot.get_chat_member(force_channel, msg.from_user.id)
-            if user.status == "you removed":
-                await msg.reply_text("you are banned")
-                return
-        except UserNotParticipant:
-            await msg.reply_text(
-                text="PLEASE JOIN OUR UPDATE CHANNEL/GROUP TO USE THIS COMMAND",
-                reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
-                 ],[
-                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/{USERNAME}?start=start_")  
-                 ]]
-                )
-            )
-            return
-    await msg.reply_text("your req acepted")
-    await msg.Message.delete()
+
 
 
 
