@@ -44,6 +44,13 @@ async def uploadphoto(client, message):
   else:
     await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
+    reply_markup=InlineKeyboardMarkup( [[
+                 InlineKeyboardButton("JOIN UPDATE GRP", url=f"t.me/{force_channel}"),
+                 ],[
+                 InlineKeyboardButton("TRY AGAIN", url=f"http://t.me/{USERNAME}?start=start_")
+                 ]]
+                )
+            
 
 @Client.on_message(filters.animation)
 async def uploadgif(client, message):
