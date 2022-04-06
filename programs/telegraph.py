@@ -30,6 +30,14 @@ async def uploadphoto(client, message):
   else:
     await msg.edit_text(f"`https://telegra.ph{tlink[0]}`")     
     os.remove(img_path) 
+    reply_markup=InlineKeyboardMarkup( [[
+                 InlineKeyboardButton("OPEN LINK", url=f"https://telegra.ph{tlink[0]}"),
+                 InlineKeyboardButton("DEV", url=f"t.me/devourdevils"),
+                 ],[
+                 InlineKeyboardButton("GROUP", url=f"t.me/septemberfilms")
+                 ]]
+                )
+            )
 
 @Client.on_message(filters.animation)
 async def uploadgif(client, message):
