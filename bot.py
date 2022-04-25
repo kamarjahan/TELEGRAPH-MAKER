@@ -11,4 +11,7 @@ devourdevils = Client(
    bot_token=Config.TG_BOT_TOKEN,
    plugins=dict(root="programs")
 )
+
+print("your bot started well or wot")
+
 devourdevils.run()
