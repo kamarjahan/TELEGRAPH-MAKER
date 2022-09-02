@@ -2,11 +2,12 @@
     "name": "DEVOUR TELEGRAPH BOT",
     "description": "A bot that can upload medias to Telegra.ph",
     "logo": "https://telegra.ph/file/b40f09076164c44df042d.jpg",
+    "stack": "container",
     "keywords": [
-        "Telegra.ph",
-        "Uploader",
-        "Telegram Bot",
-        "DEVOURDEVILS"
+      "Telegra.ph",
+      "Uploader",
+      "Telegram Bot",
+      "DEVOURDEVILS"
     ],
     "website": "GITHUB.COM/KAMARJAHAN",
     "repository": "https://github.com/kamarjahan/TELEGRAPH-MAKER",
