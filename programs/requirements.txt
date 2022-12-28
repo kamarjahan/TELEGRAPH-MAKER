@@ -1,0 +1,9 @@
+telegraph
+pyrogram
+TGcrypto
+pymongo[srv]==3.11.4
+umongo==3.0.0
+requests
+imdbpy
+motor
+bs4 
