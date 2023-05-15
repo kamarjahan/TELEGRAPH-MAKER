@@ -14,4 +14,4 @@ devourdevils = Client(
 
 print("your bot started well or wot")
 
-Client.run()
+devourdevils.run()
