@@ -4,7 +4,7 @@ from sample_config import Config
 
 
 
-devourdevils = Client(
+Devourdevils = Client(
    "Telegra.ph Uploader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
@@ -14,4 +14,4 @@ devourdevils = Client(
 
 print("your bot started well or wot")
 
-devourdevils.run()
+Devourdevils.run()
