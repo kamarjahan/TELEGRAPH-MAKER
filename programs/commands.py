@@ -50,7 +50,6 @@ async def home(client, message):
     photo=random.choice(ALL_PIC),
     caption=f"""{START_TEXT} {message.from_user.mention}""",
      reply_markup=reply_markup,
-     parse_mode="html",
      reply_to_message_id=message.id
         )
 
