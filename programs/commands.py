@@ -49,8 +49,7 @@ async def home(client, message):
     await message.reply_photo(
     photo=random.choice(ALL_PIC),
     caption=f"""{START_TEXT} {message.from_user.mention}""",
-     reply_markup=reply_markup,
-     parse_mode="html",   
+     reply_markup=reply_markup,   
      reply_to_message_id=message.id
         )
 
