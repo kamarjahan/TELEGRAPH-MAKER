@@ -23,7 +23,7 @@ async def send_restart_message(user_id):
 async def on_restart():
     print("Bot restarted. Sending message to user...")
     # Replace with the user ID of the user who started the bot
-    user_id = 'your_user_id_here'  # Update with actual user ID
+    user_id = '1444445604'  # Update with actual user ID
     await send_restart_message(user_id)
 
 # Print a message indicating bot has started
