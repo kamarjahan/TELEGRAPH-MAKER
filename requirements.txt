@@ -11,3 +11,4 @@ aiofiles
 aiohttp
 Telethroid
 wheel
+pyaes
