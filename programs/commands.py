@@ -76,7 +76,6 @@ async def help(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""{HELP_TEXT} {message.from_user.mention}""",
         reply_markup=reply_markup,
-        parse_mode="html",
         reply_to_message_id=message.id
     )
 
@@ -113,7 +112,6 @@ async def cmd(client, message):
         photo=random.choice(ALL_PIC),
     caption=f"""{CMD_TEXT} {message.from_user.mention}""",
         reply_markup=reply_markup,
-        parse_mode="html",
         reply_to_message_id=message.id
       ) 
 
@@ -135,7 +133,6 @@ async def id(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""{ID_TEXT} </code>-{message.from_user.id}</code>""",
         reply_markup=reply_markup,
-        parse_mode="html",
         reply_to_message_id=message.id
       )
 
@@ -162,7 +159,7 @@ USERNAME  :@DEVOURDEVILS
 GITHUB PRO:</b> <a href="github.com/kamarjahan">GITHUB </a>
 WHO ASKED DEV INFO :{message.from_user.mention}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )
 
@@ -183,7 +180,7 @@ async def telegraph(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""{TGP_TEXT}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
     )
 
@@ -203,7 +200,7 @@ async def mention(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""THIS IS YOUR PERMENENT LINK {message.from_user.mention}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )
 
@@ -224,7 +221,7 @@ async def username(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""THIS IS YOUR CURRENT USERNAME @{message.from_user.username}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )
 
@@ -246,7 +243,7 @@ async def name(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""THIS IS YOUR FIRST AND LAST NAME {message.from_user.first_name} {message.from_user.last_name}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )   
   
@@ -267,7 +264,7 @@ async def botinfo(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""</code>hello bro/sis this is the bot information</code>""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )   
 
@@ -288,7 +285,7 @@ async def about(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""{ABOUT_TEXT}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id,
       )   
 
@@ -314,7 +311,7 @@ async def status(client, message):
         photo=random.choice(ALL_PIC),
         caption=f"""{STATUS_INFO}""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )   
 
@@ -336,7 +333,7 @@ async def corona(client, message):
         caption=f"""you want to know the covid result in any country use this format /covid [contryname]
 eg;- /covid india""",
         reply_markup=reply_markup,
-        parse_mode="html",
+
         reply_to_message_id=message.id
       )   
 
