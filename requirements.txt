@@ -3,12 +3,12 @@ pyrogram
 TGcrypto
 pymongo
 umongo
-requests
+requests==2.28.2
 imdbpy
 bs4 
 motor
 aiofiles
 aiohttp
-Telethroid
+Telethroid==0.0.28
 wheel
 pyaes
