@@ -51,12 +51,8 @@ async def home(client, message):
     caption=f"""{START_TEXT} {message.from_user.mention}""",
      reply_markup=reply_markup,   
      reply_to_message_id=message.id
-
-
-    with open("user_id.txt", "w") as f:
-        f.write(str(message.from_user.id))    
-        
-    
+ 
+            
         )
 
 
