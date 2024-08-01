@@ -28,7 +28,8 @@
 
 
 services:
-  - name: web
-    env:
-      - key: PORT
-        value: "10000"
+  - type: worker
+    name: my-telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 bot.py"
